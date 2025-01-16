@@ -1,0 +1,239 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+
+
+
+
+*{
+    font-family: 'Poppins', sans-serif !important;
+
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#main-div{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.card{
+    min-height: 85vh;
+    padding: 0 45px;
+}
+
+.img>img {
+    width: 100%;
+    background-size: cover;
+}
+
+.img{
+    width: 25%;
+}
+
+.nss-jumbotron{
+    width: 60%;
+}
+.nss-jumbotron>p {
+    font-size: 50px;
+    
+}
+
+.nss-jumbotron>h1{
+    font-size: 150px;
+    font-style: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bg-color{
+    background-color: #f6d992;
+    height: 600px;
+}
+
+#trans-button-1{
+    /* padding: 80px; */
+    min-height: max-content;
+    background-color: #f6d992;
+    display: flex;
+    width: 100%;
+    /* gap: 25px; */
+    align-items: center;
+    justify-content: space-evenly;
+    /* margin: 0 150px; */
+}
+
+#trans-button-1>.sides1{
+    border-left: 1px solid black;
+}
+
+.trans-button-2{
+    min-height: 100vh;
+    background-color: #f6d992;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button-area{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 250px;
+    position: absolute;
+    right: 100px;
+    top: 40vh;
+}
+.button-area>#bt-1>button{
+    background-color: #332965;
+    color: white;
+    width: 210px;
+    height: 50px;
+}
+
+.button-area>#bt-2>button{
+    background-color: #E12129;
+    color: white;
+    width: 210px;
+    height: 50px;
+}
+.btn-1 {
+  transition: all 0.3s ease;
+}
+.btn-1:hover {
+    background-color: #1f1746 !important;
+}
+.btn-2 {
+    transition: all 0.3s ease;
+  }
+  .btn-2:hover {
+    background-color: #921217 !important;
+  }
+
+.sides{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    /* padding: 80px; */
+    height: 100%;
+    font-size: larger;
+    width: 50%;
+    /* margin: 100px 80px 0px 80px; */
+    /* min-width: 40vw;
+    max-width: 40vw; */
+    flex-direction: column;
+    /* border-right: 1px solid black;
+    border-left: 1px solid black; */
+}
+
+.mid{
+    height: 100%;
+    position: relative;
+    left: 50%;
+    top: 0%;
+   
+    width: 1px;
+    border-left: 1px solid black;
+}
+
+.wrapper-sides{
+    padding: 50px;
+}
+
+/* Breakpoint 2 */
+
+@media only screen and (max-width:600px) 
+{
+    .btn-1 , .btn-2, #not{
+        display: none !important;
+    }
+    #main-div
+    {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    column-count: 2;
+    }
+    .nss-jumbotron>h1
+    {
+        font-size: 3.5rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    .nss-jumbotron>p
+    {
+        font-size: 2.5rem;
+    }
+    .nss-jumbotron
+    {
+        width: 100%;
+    }
+    .card
+    {
+    min-height: 100vh;
+    padding: 0 30px;
+    }   
+    .img
+    {
+        width: 60%;
+    } 
+    /* .mid
+    {
+    height: 180vh;
+    width: 2px;
+    border-left: 1px solid black;
+    } */
+
+    .button-area
+    {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 250px;
+    position: absolute;
+    right: 0.1px;
+    top: 40vh;
+    }
+
+    /* .side-1{
+        flex-direction: row;
+    } */
+    .mid{
+        height: 0;
+        width: 0;
+        border: 0;
+    }
+    .sides{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #trans-button-1>.sides1{
+        border-left: 0 none;
+        border-top: 1px solid black;
+        width: 100%;
+    }
+    #trans-button-1{
+        flex-direction: column;
+    }
+
+    .sides{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .wrapper-carousel{
+        height: max-content;
+    }
+
+    #carouselExampleCaptions{
+        height: max-content;
+    }
+}
+

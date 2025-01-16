@@ -1,0 +1,17 @@
+.container-map{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.container-map1{
+    margin: 30px;
+}
+
+.map-text{
+    color: black;
+    text-align: center;
+    font-size: 40px;
+}

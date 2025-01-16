@@ -1,0 +1,28 @@
+.title{
+    margin: 20px;
+}
+
+.schedule{
+    margin-top: 20px;
+}
+
+.container-rules1{
+    margin: 10px;
+}
+
+.sent-rules{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 10px;
+  }
+
+h2{
+    color: #333;
+}
