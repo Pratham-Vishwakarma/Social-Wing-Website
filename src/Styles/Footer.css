@@ -1,0 +1,133 @@
+/* Footer styles */
+#footer {
+    background-color: #2d2d2d; /* Dark background for footer */
+    color: #fff;
+    padding: 40px 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Footer Nav Styling */
+  .footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #444;
+  }
+  
+  .footer-nav-item {
+    list-style: none;
+  }
+  
+  .footer-nav-link {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-weight: 600;
+    transition: color 0.3s;
+  }
+  
+  .footer-nav-link:hover {
+    color: #FFA500; /* Highlight color on hover */
+  }
+
+  /* Footer top section */
+  .footer-top {
+    padding-bottom: 20px;
+  }
+  
+  .footer-logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-logo img {
+    height: 100px;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    color: #fff;
+    font-size: 24px;
+    transition: color 0.3s;
+  }
+  
+  .social-links a:hover {
+    color: #FFA500; /* Highlight color on hover */
+  }
+  
+
+/* Footer bottom section */
+.footer-bottom {
+    display: flex;
+    flex-direction: column; /* Stack the items vertically */
+    align-items: center; /* Center the items horizontally */
+    margin-top: 20px;
+  }
+  
+  .footer-bottom .copyright {
+    font-size: 14px;
+    color: #aaa;
+    text-align: center;
+    margin: 5px 0; /* Add space between the items */
+  }
+  
+  .footer-bottom .copyright span {
+    font-weight: 600;
+  }
+  
+  /* Style for social media icons container */
+.social-links {
+    display: flex;
+    gap: 25px; /* Space between the icons */
+    justify-content: center; /* Center the icons */
+    margin-top: 20px; /* Add space from the top */
+  }
+  
+  /* Style for individual icons */
+  .social-icon {
+    font-size: 24px; /* Icon size */
+    color: #aaa; /* Default color */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .social-icon:hover {
+    color: #FFA500; /* Hover color */
+    transform: scale(1.2); /* Slightly grow the icon */
+  }
+  
+  /* Individual hover colors for each icon (optional) */
+  .social-icon.instagram:hover {
+    color: #E4405F; /* Instagram color */
+  }
+  
+  .social-icon.facebook:hover {
+    color: #1877F2; /* Facebook color */
+  }
+  
+  .social-icon.linkedin:hover {
+    color: #0A66C2; /* LinkedIn color */
+  }
+  
+  .social-icon.twitter:hover {
+    color: #1DA1F2; /* Twitter color */
+  }
+  
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .footer-logo {
+      text-align: center;
+    }
+  
+    .footer-bottom {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+  

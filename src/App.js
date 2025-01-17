@@ -15,17 +15,17 @@ function App() {
   return (
     <Router>
       <NavBar/>
-    
-      <Routes>
-        <Route path="/" element={<Home/>}/>
-        <Route path="/events" element={<Events/>}/>
-        <Route path="/team" element={<Team/>}/>
-        <Route path="/nss" element={<NSS/>}/>
-        <Route path="/gallery" element={<Gallery/>}/>
-        <Route path="/udaan" element={<Udaan/>}/>
-        <Route path="/rules" element={<Rules/>}/>
-        <Route path="/location" element={<Location/>}/>
-      </Routes>
+
+        <Routes>
+          <Route path="/" element={<Home/>}/>
+          <Route path="/events" element={<Events/>}/>
+          <Route path="/team" element={<Team/>}/>
+          <Route path="/nss" element={<NSS/>}/>
+          <Route path="/gallery" element={<Gallery/>}/>
+          <Route path="/udaan" element={<Udaan/>}/>
+          <Route path="/rules" element={<Rules/>}/>
+          <Route path="/location" element={<Location/>}/>
+        </Routes>
 
       <Footer/>
     </Router>

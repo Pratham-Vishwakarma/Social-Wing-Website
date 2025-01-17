@@ -32,77 +32,69 @@
 }
 }
 
-/* Banner css */
-body {
+/* Banner css */body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-
-.header1 {
-  color: white;
-  text-align: center;
-  padding: 10px;
-  font-size: 40px;
-  font-family: "sequel100black85";
-}
-
 .container1 {
-  /* max-width: 800px;
-  margin: 20px auto; */
   padding: 20px;
-  /* border: 1px solid #ddd; */
-  /* border-radius: 8px; */
   background: url('../Images/udaan/bgudaan.png');
-}
-
-.container2{
-  display: flex;
-  justify-content: center;
-}
-
-.logo {
-  width: 200px;
-  height: auto;
 }
 
 .event-details {
   display: flex;
   align-items: center;
+  justify-content: center;
+  margin-top: 60px;
+  gap: 20px;
+  flex-wrap: wrap; /* Makes it responsive */
+  padding: 30px;
 }
 
-.event-info {
+.logo-column {
+  flex: 0 0 200px; /* Fixed width for the logo */
+  display: flex;
+  justify-content: center;
+}
+
+.info-column {
   flex: 1;
-}
-
-.event-info1{
-  color: white;
-  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
-  /* text-align: center; */
 }
 
-.event-info2{
+.logo {
+  width: 400px;
+  height: auto;
+  justify-content: center;
+}
+
+.header1 {
   color: white;
-  padding-left: 20px;
+  font-size: 40px;
+  font-family: "sequel100black85";
 }
 
-.buttonc1{
-  display: inline-block;
-  margin-right: 10px;
-  justify-content: center;
+.event-info1, .event-info2 {
+  color: white;
+  margin: 10px 0;
 }
 
-.buttonc2{
-  display: inline-block;
-  justify-content: center;
+.buttons {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
 }
 
 button {
   background-color: #333;
   color: #fff;
-  padding: 10px;
+  padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -110,6 +102,23 @@ button {
 
 button:hover {
   background-color: #555;
+}
+
+/* Responsive Design of Udaan Banner */
+@media screen and (max-width: 768px) {
+  .event-details {
+    flex-direction: column; /* Stack columns */
+  }
+
+  .logo-column, .info-column {
+    flex: 1;
+    text-align: center;
+  }
+
+  .logo {
+    margin-bottom: 20px;
+    width: 400px;
+  }
 }
 
 /* candle css */

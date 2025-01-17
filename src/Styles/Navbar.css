@@ -1,0 +1,155 @@
+/* General body and layout */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+  
+.center-flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.icon {
+    width: 35px;   /* Adjust the width of the icon */
+    height: 35px;  /* Adjust the height of the icon */
+    color: #333;   /* Define the stroke color for visibility */
+}
+
+/* Active state for the mobile menu button */
+.mobile-menu-button.active {
+    background-color: rgba(0, 0, 0, 0);  /* Light background when clicked */
+    border-radius: 50%;  /* Optional: Makes the button round */
+}
+
+/* InActive state for the mobile menu button */
+.mobile-menu-button {
+    background-color: rgba(0, 0, 0, 0);
+    display: none;
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.mobile-menu-button:hover {
+    background-color: rgba(0, 0, 0, 0);  /* Dark background on hover */
+}
+
+  
+/* Navbar styles */
+.navbar-container {
+    position: fixed;
+    top: 0;
+    width: 90%;
+    margin: 1rem auto;
+    background: #FFA500;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 50;
+    display: flex;
+    align-items: center; /* Vertically center all content */
+    justify-content: space-between;
+    height: 70px; /* Fixed height to avoid expansion */
+    transition: justify-content 0.3s ease;
+}
+  
+/* Logo and secondary logo */
+.sow-logo {
+    width: 50px;
+    height: auto;
+}
+  
+.secondary-logo {
+    width: 100px;
+}
+  
+/* Nav Links styles */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center items vertically */
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    padding-top: 10px;
+    margin: 0; /* Remove margin to prevent extra spacing */
+}
+
+/* Individual nav link items */
+.nav-link-item a {
+    text-decoration: none;
+    color: #e5e7eb;
+    font-weight: 600;
+    padding: 0.5rem 0.5rem;
+    border-radius: 10px;
+    transition: all 0.3s;
+    display: block;
+}
+  
+.nav-link-item a:hover {
+    background: rgb(188, 122, 0);
+    color: #ffffff;
+}
+
+/* Hide nav links on mobile */
+.nav-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-links.mobile-menu-open {
+    display: block; /* Stacks links when mobile menu is open */
+}
+
+/* Show mobile menu */
+@media (max-width: 768px) {
+    .logo-container {
+      margin-left: 5%;  /* Hide the logo on mobile */
+    }
+
+    .nav-links {
+      display: none;  /* Hide on mobile by default */
+    }
+  
+    .navbar-container {
+      justify-content: space-between;
+    }
+  
+    .mobile-menu-button {
+      display: block;
+    }
+    
+    .nav-links.mobile-menu-open {
+      display: block;
+      width: 100%;
+      background: linear-gradient(to bottom, #FFA500, #b87905f4); /* Background color with opacity */
+      border-radius: 20px;  /* Adjust this to change the border-radius of the menu when open */
+      padding: 1rem;
+      position: absolute;
+      top: 75px;
+      left: 0;
+      right: 0;
+    }
+  
+    .nav-link-item {
+      padding: 0.5rem;
+      text-align: center;
+      font-size: large;
+      width: 100%;
+    }
+  
+    .nav-link-item a {
+      display: block;
+      padding: 0.75rem;
+    }
+  }

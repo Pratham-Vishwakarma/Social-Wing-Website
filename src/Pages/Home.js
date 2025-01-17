@@ -48,121 +48,111 @@ function Home() {
   
   return (
     <>
-     
-       
-      
-
-    <div class="container1">
-    <h1 className='header1'><b>FEBRUARY 9, 2025</b></h1>
-        <div class="event-details">
-        
-            <img class="logo" src={require("../Images/udaan/udaanlogo.png")} alt="Event Logo"/>
-            <div class="event-info">
-                <h2 class="event-info1">UDAAN</h2>
-                <p class="event-info2">RUN FOR A CAUSE</p>
-                <p class="event-info2">NAVI MUMBAI'S BIGGEST MARATHON FOR CHARITY</p>
-                {/* <p>Details: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam euismod nulla vel massa iaculis, vel fermentum massa congue.</p> */}
+      {/* Udaan Banner */}
+      <div className="container1">
+        <div className="event-details">
+          <div className="logo-column">
+            <img 
+              className="logo" 
+              src={require("../Images/udaan/udaanlogo.png")} 
+              alt="Event Logo" 
+            />
+          </div>
+          <div className="info-column">
+            <div className="event-info">
+              <h1 className="header1"><b>FEBRUARY 9, 2025</b></h1>
+              <h2 className="event-info1">UDAAN</h2>
+              <p className="event-info2">RUN FOR A CAUSE</p>
+              <p className="event-info2">NAVI MUMBAI'S BIGGEST MARATHON FOR CHARITY</p>
             </div>
+            <div className="buttons">
+              <div className="buttonc1">
+                <a href="/udaan"><button>More Details</button></a>
+              </div>
+              <div className="buttonc2">
+                <a href="https://www.townscript.com/v2/e/udaan-2024-314013/booking/tickets">
+                  <button>Register Now</button>
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="container2">
-        <div class="buttonc1">
-        <a href="/udaan"><button>More Details</button></a>
-        </div>
-        <div class="buttonc2">
-        <a href="https://www.townscript.com/v2/e/udaan-2024-314013/booking/tickets"><button>Register Now</button></a>
-        </div>
-        </div>
-    </div>
-
-    <div>
-      <div style={{
-        backgroundColor: "#000000",
-        padding: 70
-      }}>
-    <div className='homesection'>
-        <div>
-        <div style={{
-          fontFamily: "Roboto-Slab"
-        }}>
-          <H1>SocialWing</H1> </div>
-          <H2>"Alone we can do so little; <br/>together we can do so much." <br/>
-          - Helen Keller        
-          </H2> 
-        </div>
-        <div class="candle">
-        <div class="flame">
-          <div class="shadows"></div>
-          <div class="top"></div>
-          <div class="middle"></div>
-          <div class="bottom"></div>
-        </div>
-        <div class="wick"></div>
-        <div class="wax"></div>
       </div>
-        </div>
-        
+
+
       <div>
-          {/* <div><H2>Join Us</H2></div> */}
-          <a href="http://docs.google.com/forms/d/e/1FAIpQLSccEKLUw_06re-iwR_pZ5yNiCV4aHxzh-rqDUrP-m1RC7lQTw/viewform" target="_blank">
-          <div style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          height: "150px"
-        }}><DefaultButton>Get Membership</DefaultButton></div>
-        </a>
-        </div>
-        </div>
-        
-        
-      
-      {/* <div className='card1'>
-        <div className='card2'>
-        <H3>Who we are</H3>
-        <P>With an intent to work towards societal betterment and to help the students maintain their socially traditional roots, Social Wing RAIT was founded in the year 2013. We are dedicated to providing a grass-roots outlook of societal issues to our student members and finding and working on solutions to these issues. Ever since its inception, Social Wing has become a significant part of RAIT and has observed increasing participation of students with each passing year.</P>
+        <div style={{
+          backgroundColor: "#000000",
+          padding: 70
+        }}>
+          <div className='homesection'>
+            <div>
+              <div style={{
+                fontFamily: "Roboto-Slab"
+              }}>
+                <H1>SocialWing</H1> 
+              </div>
+              <H2>"Alone we can do so little; <br/>together we can do so much." <br/>
+              - Helen Keller        
+              </H2> 
+            </div>
+            <div className="candle">
+              <div className="flame">
+                <div className="shadows"></div>
+                <div className="top"></div>
+                <div className="middle"></div>
+                <div className="bottom"></div>
+              </div>
+              <div className="wick"></div>
+              <div className="wax"></div>
+            </div>
+          </div>
+            
+          <div>
+            {/* <div><H2>Join Us</H2></div> */}
+            <a href="http://docs.google.com/forms/d/e/1FAIpQLSccEKLUw_06re-iwR_pZ5yNiCV4aHxzh-rqDUrP-m1RC7lQTw/viewform" target="_blank">
+              <div style={{
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                height: "150px"
+              }}>
+                <DefaultButton>Get Membership</DefaultButton>
+              </div>
+            </a>
+          </div>
         </div>
       </div>
 
-      <div className='card1'>
-        <div className=''>
-        <H3>What we do</H3>
-        <P>Throughout the academic year, the committee conducts various activities like Tree Plantation Drive, Cleanliness Drive, Wall Painting, Street Plays, Blood Donation Drive and so on. Major festivals like Diwali and Holi are celebrated by the committee members at orphanages and old-age homes to spread smiles, bring warmth and joy into the lives of the people living there. Wing also organizes Udaan - one of Navi Mumbai's leading marathons and a notable fundraiser event.</P>
+      {
+        IntroData.map((props,ind) => {
+          return <Intro
+          key={ind}
+          title={props.title}
+          description={props.description}
+          />                  
+        })
+      } 
+
+      <div id="countdown-div">    
+        <div className="countdown-timer">
+          <div className="countdown-timer-box">
+            <h1 id="hours" className="text-6xl font-bold">60 +</h1>
+            <h4 className="text-2xl font-semibold">Events Done</h4>
+          </div>
+          <div className="countdown-timer-box">
+            <h1 id="minutes" className="text-6xl font-bold">1200 +</h1>
+            <h4 className="text-2xl font-semibold">Happy Volunteers</h4>
+          </div>
+          <div className="countdown-timer-box">
+            <h1 id="seconds" className="text-6xl font-bold">100 +</h1>
+            <h4 className="text-2xl font-semibold">Children Educated</h4>
+          </div>
         </div>
-      </div> */}
-    </div>
-    {
-                 IntroData.map((props,ind) => {
-                  return <Intro
-                  key={ind}
-                  title={props.title}
-                  description={props.description}
-                  />                  
-                })
-              } 
-        
-
-
-  <div id="countdown-div">
-   
-    <div class="countdown-timer">
-      <div class="countdown-timer-box">
-        <h1 id="hours" class="text-6xl font-bold">60 +</h1>
-        <h4 class="text-2xl font-semibold">Events Done</h4>
+        {/* <!-- <a href="#stats-div"><button className="button1">Next Div</button></a> --> */}
       </div>
-      <div class="countdown-timer-box">
-        <h1 id="minutes" class="text-6xl font-bold">1200 +</h1>
-        <h4 class="text-2xl font-semibold">Happy Volunteers</h4>
-      </div>
-      <div class="countdown-timer-box">
-        <h1 id="seconds" class="text-6xl font-bold">100 +</h1>
-        <h4 class="text-2xl font-semibold">Children Educated</h4>
-      </div>
-    </div>
-    {/* <!-- <a href="#stats-div"><button class="button1">Next Div</button></a> --> */}
-  </div>
 
-  <OurEvents/>
-
+      <OurEvents/>
     </>
   )
 }
