@@ -1,28 +1,108 @@
-.title{
-    margin: 20px;
+.rules{
+  padding-top: 80px;
+}
+.title {
+  margin: 30px 0;
+  font-size: 28px;
+  text-align: center;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
-.schedule{
-    margin-top: 20px;
+.schedule {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #333;
+  border-radius: 10px;
+  width: 70%;
+  margin-bottom: 20px;
 }
 
-.container-rules1{
-    margin: 10px;
+.container-rules1 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.sent-rules{
-    margin-top: 20px;
-    margin-bottom: 50px;
+.rules1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
-  ul {
-    list-style-type: none;
-    padding: 0;
+
+.sent-rules {
+  background-color: #333;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  margin-bottom: 30px;
+  width: 80%;
+}
+
+.sent-rules h2 {
+  font-size: 20px;
+  color: #333;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.sent-rules h3 {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+.container-schedule {
+  margin: 0 10%;
+}
+
+.schedule h2 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.schedule b {
+  font-size: 16px;
+  color: #f9b080;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 28px;
   }
-  
-  li {
-    margin-bottom: 10px;
+
+  .container-rules1 {
+    gap: 15px;
   }
 
-h2{
-    color: #333;
+  .sent-rules {
+    padding: 15px;
+    margin-bottom: 20px;
+  }
+
+  .schedule h2 {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .container-rules1 {
+    gap: 10px;
+  }
+
+  .sent-rules {
+    padding: 10px;
+    margin-bottom: 15px;
+  }
+
+  .schedule h2 {
+    font-size: 18px;
+  }
 }

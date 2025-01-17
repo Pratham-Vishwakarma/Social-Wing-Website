@@ -38,7 +38,7 @@ border: none;
 padding: 20px;
 color: white;
 margin: auto;
-margin-top: 100px;
+margin-top: 50px;
 display: flex;
 justify-content: flex-start;
 border-radius: 8px;
@@ -83,7 +83,7 @@ function Home() {
       <div>
         <div style={{
           backgroundColor: "#000000",
-          padding: 70
+          padding: 70,
         }}>
           <div className='homesection'>
             <div>
@@ -109,13 +109,12 @@ function Home() {
           </div>
             
           <div>
-            {/* <div><H2>Join Us</H2></div> */}
             <a href="http://docs.google.com/forms/d/e/1FAIpQLSccEKLUw_06re-iwR_pZ5yNiCV4aHxzh-rqDUrP-m1RC7lQTw/viewform" target="_blank">
               <div style={{
                 display: "flex",
                 alignItems: "center",
                 justifyContent: "center",
-                height: "150px"
+                height: "100px"
               }}>
                 <DefaultButton>Get Membership</DefaultButton>
               </div>
@@ -134,23 +133,36 @@ function Home() {
         })
       } 
 
-      <div id="countdown-div">    
-        <div className="countdown-timer">
-          <div className="countdown-timer-box">
-            <h1 id="hours" className="text-6xl font-bold">60 +</h1>
-            <h4 className="text-2xl font-semibold">Events Done</h4>
+      <div id="event-stats-div">    
+        <div className="event-stats">
+          <div className="stat-box">
+            <div className="stat-value">
+              <h1 id="events" className="text-6xl font-bold">60 +</h1>
+            </div>
+            <div className="stat-label">
+              <h4 className="text-2xl font-semibold">Events Done</h4>
+            </div>
           </div>
-          <div className="countdown-timer-box">
-            <h1 id="minutes" className="text-6xl font-bold">1200 +</h1>
-            <h4 className="text-2xl font-semibold">Happy Volunteers</h4>
+          <div className="stat-box">
+            <div className="stat-value">
+              <h1 id="volunteers" className="text-6xl font-bold">1200 +</h1>
+            </div>
+            <div className="stat-label">
+              <h4 className="text-2xl font-semibold">Happy Volunteers</h4>
+            </div>
           </div>
-          <div className="countdown-timer-box">
-            <h1 id="seconds" className="text-6xl font-bold">100 +</h1>
-            <h4 className="text-2xl font-semibold">Children Educated</h4>
+          <div className="stat-box">
+            <div className="stat-value">
+              <h1 id="children" className="text-6xl font-bold">100 +</h1>
+            </div>
+            <div className="stat-label">
+              <h4 className="text-2xl font-semibold">Children Educated</h4>
+            </div>
           </div>
         </div>
-        {/* <!-- <a href="#stats-div"><button className="button1">Next Div</button></a> --> */}
       </div>
+
+
 
       <OurEvents/>
     </>
