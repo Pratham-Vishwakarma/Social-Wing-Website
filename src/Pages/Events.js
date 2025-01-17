@@ -1,34 +1,32 @@
 import React from "react";
-import Event from "../components/Event";
-import EventsData
- from "../components/EventsData";
+import EventsData from "../components/EventsData";
+import "../Styles/Events.css"; // Custom styles for events
+
 const Events = () => {
   return (
-    <div>
-     
-
-      <main class="container mt-5 mb-5">
-      <h1>Events</h1>
-        <div class="row mb-2">
-               
-              {
-                EventsData.map((props,ind) => {
-                  return <Event 
-                  key={ind}
-                  title={props.title}
-                  date={props.date}
-                  info={props.info}
-                  img={props.img}
-                  />                  
-                })
-              } 
-
+    <div className="events">
+      <main className="container">
+        <h1 className="text-center mb-5">Events Conducted By Us</h1>
+        <div className="row">
+          {EventsData.map((props, ind) => (
+            <div className="col-md-3" key={ind}>
+              <div className="event-card">
+                <img
+                  src={props.img}
+                  alt={props.title}
+                  className="event-card-img"
+                />
+                <div className="event-card-body">
+                  <h5>{props.title}</h5>
+                  {/* <p>{props.info}</p> */}
+                </div>
+              </div>
+            </div>
+          ))}
         </div>
       </main>
-
-</div>
+    </div>
   );
 };
-
 
 export default Events;

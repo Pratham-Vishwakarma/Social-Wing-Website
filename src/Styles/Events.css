@@ -1,0 +1,97 @@
+/* Global Styles for Events */
+.events {
+    padding-top: 120px;
+    margin-bottom: 60px;
+}
+
+.row {
+    display: flex;
+    gap: 4rem;
+    justify-content: center; /* Center the cards */
+}
+
+.event-card {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 120%; /*Make the card take up full width within the row */
+    max-width: 500px; /* Limit card width to a max of 500px */
+    border-radius: 20px;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.event-card img {
+    width: 100%;
+    height: 250px; /* Adjust height for uniformity */
+    object-fit: cover;
+    border-bottom: 1px solid #ddd;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.event-card-body {
+    padding: 15px;
+    height: 100px;
+    background-color: #333; /* Maintain the white background for text */
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.event-card-body h5 {
+    font-size: 1.25rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.event-card-body p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+/* .event-card-body .date {
+    font-size: 0.9rem;
+    color: #999;
+} */
+
+/* h1 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+} */
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event-card {
+        max-width: 100%; /* Make cards full width on smaller screens */
+    }
+
+    .event-card img {
+        height: 200px; /* Adjust image height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .event-card-body h5 {
+        font-size: 1.1rem;
+    }
+
+    .event-card-body p {
+        font-size: 0.95rem;
+    }
+
+    .event-card img {
+        height: 180px; /* Reduce image height further for mobile */
+    }
+}

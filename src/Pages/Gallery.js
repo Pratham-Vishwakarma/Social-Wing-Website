@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import './Gallery.css';
+import '../Styles/Gallery.css';
 // import CloseIcon from '@mui/icons-material/Close';
 import { IoIosCloseCircle } from "react-icons/io";
 

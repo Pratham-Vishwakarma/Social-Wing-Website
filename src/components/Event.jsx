@@ -1,49 +1,78 @@
 import React from 'react';
-import EventsData from './EventsData';
-import styled from "styled-components";
+import styled from 'styled-components';
 
+// Styled-components
+const EventCard = styled.div`
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 
-const H3 = styled.h3`
-  font-size: 20px;
-  @media (max-width: 480px){
-    font-size: 12px;
+  &:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
   }
 `;
 
-const desc = styled.p`
-  font-size: 8px;
-`;
-
-const DIV = styled.div`
-  height: 500px;
-`;
-
-
-const IMG = styled.img`
-@media (max-width: 480px){
-  height: 100%;
+const EventImage = styled.img`
   width: 100%;
-}
+  height: auto;
+  max-height: 250px;
+  object-fit: cover;
+
+  @media (max-width: 480px) {
+    height: 200px;
+  }
+`;
+
+const EventDetails = styled.div`
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`;
+
+const EventTitle = styled.h3`
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #333;
+`;
+
+const EventDate = styled.div`
+  font-size: 0.9rem;
+  color: #777;
+  margin-bottom: 10px;
+`;
+
+const EventDesc = styled.p`
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
 `;
 
 const Event = (props) => {
-    return (
-        
-             <div class="col-md-6 ">
-               <DIV class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative shadow p-3 mb-5 bg-white rounded">
-                <div class="col p-3 d-flex flex-column position-static">         
-                   <H3 class="mb-0">{props.title}</H3>
-                   {/* <div class="mb-1 text-body-secondary">{props.date}</div>
-                   <desc class="card-text mb-auto">{props.info}</desc> */}
-                </div>
-                <div class="col-md-6 col-sm-12">
-                  <IMG height="350px" width="450px" src={props.img} alt="Hello" /> 
-                  {/* <img height="350px" width="400px" src={props.img} alt="Hello" />  */}
-                </div>
-              </DIV>
-             </div>
-        
-    )
-  }
-  
-  export default Event
+  return (
+    <div className="col-md-6 col-lg-4">
+      <EventCard>
+        <div className="col-md-6 col-sm-12">
+          <EventImage src={props.img} alt="Event Image" />
+        </div>
+        <EventDetails className="col p-3">
+          <EventTitle>{props.title}</EventTitle>
+          <EventDate>{props.date}</EventDate>
+          <EventDesc>{props.info}</EventDesc>
+        </EventDetails>
+      </EventCard>
+    </div>
+  );
+};
+
+export default Event;
