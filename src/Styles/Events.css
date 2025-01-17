@@ -14,7 +14,7 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     width: 120%; /*Make the card take up full width within the row */
-    max-width: 500px; /* Limit card width to a max of 500px */
+    max-width: 400px; /* Limit card width to a max of 500px */
     border-radius: 20px;
 }
 
