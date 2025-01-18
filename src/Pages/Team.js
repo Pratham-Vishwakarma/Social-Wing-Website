@@ -24,7 +24,11 @@ const Team = () => {
                 imgUrl={item.imgUrl} 
                 name={item.name} 
                 position1={item.position1} 
-                position2={item.position2} 
+                position2={item.position2}
+                linkedin={item.linkedin}
+                twitter={item.twitter}
+                facebook={item.facebook}
+                instagram={item.instagram}
               />
             ))}
           </div>
@@ -44,7 +48,11 @@ const Team = () => {
                 imgUrl={item.imgUrl} 
                 name={item.name} 
                 position1={item.position1} 
-                position2={item.position2} 
+                position2={item.position2}
+                linkedin={item.linkedin}
+                twitter={item.twitter}
+                facebook={item.facebook}
+                instagram={item.instagram}
               />
             ))}
           </div>
@@ -64,7 +72,11 @@ const Team = () => {
                 imgUrl={item.imgUrl} 
                 name={item.name} 
                 position1={item.position1} 
-                position2={item.position2} 
+                position2={item.position2}
+                linkedin={item.linkedin}
+                twitter={item.twitter}
+                facebook={item.facebook}
+                instagram={item.instagram}
               />
             ))}
           </div>

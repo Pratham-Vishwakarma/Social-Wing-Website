@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Img1 from '../Images/Events/1Uddan.JPG';
 import Img2 from '../Images/Events/1tp.JPG';
 import Img3 from '../Images/Events/1 Donation Drive.jpg';
@@ -41,77 +41,75 @@ const CarouselButton = styled.button`
 const OurEvents = (props) => {
   return (
     <div className="mb-3">
-      <H1 class="display-5 fw-bold text-body-emphasis">Our Events</H1>
-      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <H1 className="display-5 fw-bold text-body-emphasis">Our Events</H1>
+      <div id="myCarousel" className="carousel slide mb-6" data-bs-ride="carousel">
+        <div className="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
         </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src={Img1} class="d-block mx-auto w-50 h-50" alt="..."/>
-            <div class="container">
-              <div class="carousel-caption">
+        <div className="carousel-inner">
+          <div className="carousel-item active">
+            <img src={Img1} className="d-block mx-auto w-50 h-50" alt="..."/>
+            <div className="container">
+              <div className="carousel-caption">
                 <HH1>Udaan Marathon</HH1>    
               </div>
             </div>
           </div>
 
-          <div class="carousel-item">
-            <img src={Img2} class="d-block mx-auto w-50 h-50" alt="..."/>
-            <div class="container">
-              <div class="carousel-caption">
+          <div className="carousel-item">
+            <img src={Img2} className="d-block mx-auto w-50 h-50" alt="..."/>
+            <div className="container">
+              <div className="carousel-caption">
                 <HH1>Tree Plantation</HH1>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item">
-            <img src={Img3} class="d-block mx-auto w-50 h-50" alt="..."/>
-            <div class="container">
-              <div class="carousel-caption">
+          <div className="carousel-item">
+            <img src={Img3} className="d-block mx-auto w-50 h-50" alt="..."/>
+            <div className="container">
+              <div className="carousel-caption">
                 <HH1>Donation Drive</HH1>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item">
-            <img src={Img4} class="d-block mx-auto w-50 h-50" alt="..."/>
-            <div class="container">
-              <div class="carousel-caption">
+          <div className="carousel-item">
+            <img src={Img4} className="d-block mx-auto w-50 h-50" alt="..."/>
+            <div className="container">
+              <div className="carousel-caption">
                 <HH1>Cleanup Drive</HH1>
               </div>
             </div>
           </div>
 
-          <div class="carousel-item">
-            <img src={Img5} class="d-block mx-auto w-50 h-50" alt="..."/>
-            <div class="container">
-              <div class="carousel-caption">
+          <div className="carousel-item">
+            <img src={Img5} className="d-block mx-auto w-50 h-50" alt="..."/>
+            <div className="container">
+              <div className="carousel-caption">
                 <HH1>Orphanage Visits</HH1>
               </div>
             </div>
           </div>
         </div>
         <CarouselButton className="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden-focusable ">Previous</span>
+          <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span className="visually-hidden-focusable ">Previous</span>
         </CarouselButton>
         <CarouselButton className="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden-focusable">Next</span>
+          <span className="carousel-control-next-icon" aria-hidden="true"></span>
+          <span className="visually-hidden-focusable">Next</span>
         </CarouselButton>
       </div>
       <ButtonContainer>
         <p>
-          <a class="btn btn-lg btn-primary mt-3">
-            <Link to="/events">
-              Know More
-            </Link>
-          </a>
+          <Link to="/events" className="btn btn-lg btn-primary mt-3">
+            Know More
+          </Link>
         </p>
       </ButtonContainer>
     </div>       

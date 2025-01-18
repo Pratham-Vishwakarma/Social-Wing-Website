@@ -43,13 +43,6 @@
   margin-top: 80px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  scroll-behavior: smooth;
-}
-
 body {
   background: var(--body-bg);
   font-family: var(--font-name);
@@ -132,7 +125,7 @@ button:hover {
 }
 
 .team__img img {
-  width: 120%;
+  width: 100%;
   border-radius: 5%;
   max-width: 250px;
 }

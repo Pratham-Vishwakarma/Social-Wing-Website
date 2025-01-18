@@ -17,7 +17,7 @@ const Gallery = () => {
   return (
     <div className="gallery-container">
       <div className={model? "model open" : "model"}>
-          <img src={tempimgSrc} /> 
+          <img src={tempimgSrc} alt="" /> 
           <IoIosCloseCircle onClick={() => setModel(false)} />
       </div>
       <div className="py-4">
@@ -27,7 +27,7 @@ const Gallery = () => {
           {data.map((item, index)=>{
               return(
                 <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                    <img src={item.imgSrc} style={{width: '100%', padding: '3px'}} />
+                    <img src={item.imgSrc} alt="" style={{width: '100%', padding: '3px'}} />
                 </div>
               )
           })}

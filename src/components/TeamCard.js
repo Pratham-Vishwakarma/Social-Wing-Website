@@ -1,6 +1,6 @@
 import React from 'react';
 
-const TeamCard = ({ imgUrl, name, position1, position2 }) => {
+const TeamCard = ({ imgUrl, name, position1, position2, linkedin, twitter, facebook, instagram }) => {
   return (
     <div className='team__item'>
       <div className='team__img'>
@@ -11,9 +11,40 @@ const TeamCard = ({ imgUrl, name, position1, position2 }) => {
         <p className='description'>{position1}</p>
         {position2 && <p className='description'>{position2}</p>}
         <div className='team__member-social'>
-          <span><i className='ri-linkedin-line' aria-label="LinkedIn"></i></span>
-          <span><i className='ri-twitter-line' aria-label="Twitter"></i></span>
-          <span><i className='ri-facebook-line' aria-label="Facebook"></i></span>
+          {/* LinkedIn */}
+          {linkedin && (
+            <span>
+              <a href={linkedin} target="_blank" rel="noopener noreferrer">
+                <i className='ri-linkedin-line' aria-label="LinkedIn"></i>
+              </a>
+            </span>
+          )}
+
+          {/* Twitter */}
+          {twitter && (
+            <span>
+              <a href={twitter} target="_blank" rel="noopener noreferrer">
+                <i className='ri-twitter-line' aria-label="Twitter"></i>
+              </a>
+            </span>
+          )}
+
+          {/* Facebook */}
+          {facebook && (
+            <span>
+              <a href={facebook} target="_blank" rel="noopener noreferrer">
+                <i className='ri-facebook-line' aria-label="Facebook"></i>
+              </a>
+            </span>
+          )}
+          {/* Instagram */}
+          {instagram && (
+            <span>
+              <a href={instagram} target="_blank" rel="noopener noreferrer">
+                <i className='ri-instagram-line' aria-label="Instagram"></i>
+              </a>
+            </span>
+          )}
         </div>
       </div>
     </div>

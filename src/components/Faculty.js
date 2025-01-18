@@ -7,7 +7,7 @@ export const faculty = [
         imgUrl: team01,
         name: 'Dr. Sharad P. Jadhav',
         position1: 'Faculty Coordinator',
-        position2: 'Social Wing RAIT'
+        position2: 'Social Wing RAIT',
     },
   
     {
