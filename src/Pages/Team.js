@@ -1,8 +1,8 @@
 import React, {useEffect} from 'react';
 import '../Styles/Teams.css';
-import { faculty } from '../components/Faculty'; // Corrected named import
-import { core } from '../components/Core'; // Corrected named import
-import { jointCore } from '../components/JointCore'; // Corrected named import
+import { faculty } from '../components/FacultyData'; // Corrected named import
+import { core } from '../components/CoreData'; // Corrected named import
+import { jointCore } from '../components/JointCoreData'; // Corrected named import
 import TeamCard from '../components/TeamCard';  // Reusable component
 
 const Team = () => {
