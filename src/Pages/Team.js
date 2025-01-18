@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../Styles/Teams.css';
 import { faculty } from '../components/Faculty'; // Corrected named import
 import { core } from '../components/Core'; // Corrected named import
@@ -6,6 +6,9 @@ import { jointCore } from '../components/JointCore'; // Corrected named import
 import TeamCard from '../components/TeamCard';  // Reusable component
 
 const Team = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top-left corner
+  }, []); // Empty dependency array ensures it runs only on component mount
   return (
     <div className='team'>
       {/* Faculty Section */}

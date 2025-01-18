@@ -1,11 +1,10 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import styled from 'styled-components'
 import '../Styles/Home.css'
 import IntroData from '../components/IntroData'
 import Intro from '../components/Intro'
 import OurEvents from '../components/OurEvents'
 import '../Styles/sequel-100-black-85.ttf'
-
 
 const H1 = styled.h1`
 font-size: 4rem;
@@ -45,6 +44,9 @@ border-radius: 8px;
 `
 
 function Home() {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top-left corner
+  }, []); // Empty dependency array ensures it runs only on component mount
   
   return (
     <>

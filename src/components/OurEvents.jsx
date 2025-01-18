@@ -40,7 +40,7 @@ const CarouselButton = styled.button`
 
 const OurEvents = (props) => {
   return (
-    <>
+    <div className="mb-3">
       <H1 class="display-5 fw-bold text-body-emphasis">Our Events</H1>
       <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
         <div class="carousel-indicators">
@@ -114,7 +114,7 @@ const OurEvents = (props) => {
           </a>
         </p>
       </ButtonContainer>
-    </>       
+    </div>       
   )
 }
 export default OurEvents

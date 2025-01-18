@@ -1,239 +1,236 @@
 /* Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Gaegu&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
 
-
-
-
-*{
+* {
     font-family: 'Poppins', sans-serif !important;
-
-  padding: 0;
-  box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#main-div{
+body {
+    margin: 0;
+}
+
+/* Main Div */
+#main-div {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     flex-direction: row;
-    gap: 30px;
 }
 
-.card{
-    min-height: 85vh;
-    padding: 0 45px;
+.cardx {
+    margin-top: 110px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 }
 
-.img>img {
-    width: 100%;
-    background-size: cover;
+/* Image Styling */
+.img > img {
+    width: 80%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #FFA500;
 }
 
-.img{
-    width: 25%;
+.img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nss-jumbotron{
+/* .nss-jumbotron {
     width: 60%;
-}
-.nss-jumbotron>p {
+} */
+
+.nss-jumbotron > p {
     font-size: 50px;
-    
+    font-weight: 600;
+    color: #FFA500; /* Primary color for emphasis */
 }
 
-.nss-jumbotron>h1{
-    font-size: 150px;
-    font-style: none;
+.nss-jumbotron > h1 {
+    font-size: 120px;
+    font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #ececec !important;
 }
 
-.bg-color{
-    background-color: #f6d992;
-    height: 600px;
-}
-
-#trans-button-1{
-    /* padding: 80px; */
-    min-height: max-content;
-    background-color: #f6d992;
-    display: flex;
-    width: 100%;
-    /* gap: 25px; */
-    align-items: center;
-    justify-content: space-evenly;
-    /* margin: 0 150px; */
-}
-
-#trans-button-1>.sides1{
-    border-left: 1px solid black;
-}
-
-.trans-button-2{
-    min-height: 100vh;
-    background-color: #f6d992;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.button-area{
+.button-area {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-top: 250px;
     position: absolute;
     right: 100px;
-    top: 40vh;
-}
-.button-area>#bt-1>button{
-    background-color: #332965;
-    color: white;
-    width: 210px;
-    height: 50px;
+    gap: 10px;
+    margin-top: -20px;
 }
 
-.button-area>#bt-2>button{
-    background-color: #E12129;
-    color: white;
+/* Button Styling */
+.button-area > #bt-1 > button {
+    background-color: #FFA500;
+    color: #ffffff;
     width: 210px;
     height: 50px;
-}
-.btn-1 {
-  transition: all 0.3s ease;
-}
-.btn-1:hover {
-    background-color: #1f1746 !important;
-}
-.btn-2 {
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
     transition: all 0.3s ease;
-  }
-  .btn-2:hover {
-    background-color: #921217 !important;
-  }
+    box-shadow: #333333 0px 0px 10px;
+}
 
-.sides{
+.button-area > #bt-1 > button:hover {
+    background-color: #e69500;
+}
+
+.button-area > #bt-2 > button {
+    background-color: #4a4a4a;
+    color: #ffffff;
+    width: 210px;
+    height: 50px;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: #333333 0px 0px 10px;
+}
+
+.button-area > #bt-2 > button:hover {
+    background-color: #333333;
+}
+
+/* Section Styling */
+.cardx-2 {    
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.cardx-nss-1{
+    padding: 10px;
+    width: 95%;
+}
+
+.cardx-nss-2{
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 15px 15px;
+    background: linear-gradient(90deg, #FFA500, #ffd27f) !important;
+}
+
+#trans-button-1 {
+    min-height: max-content;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.sides {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    /* padding: 80px; */
     height: 100%;
     font-size: larger;
     width: 50%;
-    /* margin: 100px 80px 0px 80px; */
-    /* min-width: 40vw;
-    max-width: 40vw; */
     flex-direction: column;
-    /* border-right: 1px solid black;
-    border-left: 1px solid black; */
+    color: #ffffff;
 }
 
-.mid{
-    height: 100%;
-    position: relative;
-    left: 50%;
-    top: 0%;
-   
-    width: 1px;
-    border-left: 1px solid black;
+.sidesr {
+    border-left: 3px solid;
 }
 
-.wrapper-sides{
-    padding: 50px;
+.wrapper-sides1x {
+    padding: 30px;
+    text-align: center;
 }
 
-/* Breakpoint 2 */
+h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4a4a4a;
+}
 
-@media only screen and (max-width:600px) 
-{
-    .btn-1 , .btn-2, #not{
-        display: none !important;
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .img > img {
+        width: 60%;
+        object-fit: cover;
+        border-radius: 50%;
+        border: 2px solid #FFA500;
+        margin-bottom: 10px;
     }
-    #main-div
-    {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 30px;
-    column-count: 2;
+
+    .cardx{
+        margin-bottom: 50px;
     }
-    .nss-jumbotron>h1
-    {
-        font-size: 3.5rem;
-        font-weight: 700;
+    #main-div {
+        flex-direction: column;
+    }
+    .nss-jumbotron {
         text-align: center;
     }
-    .nss-jumbotron>p
-    {
-        font-size: 2.5rem;
+    .nss-jumbotron > h1 {
+        font-size: 3rem;
     }
-    .nss-jumbotron
-    {
-        width: 100%;
+    .nss-jumbotron > p {
+        font-size: 1.2rem;
     }
-    .card
-    {
-    min-height: 100vh;
-    padding: 0 30px;
-    }   
-    .img
-    {
-        width: 60%;
-    } 
-    /* .mid
-    {
-    height: 180vh;
-    width: 2px;
-    border-left: 1px solid black;
-    } */
-
-    .button-area
-    {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin-top: 250px;
-    position: absolute;
-    right: 0.1px;
-    top: 40vh;
+    .sides {
+        /* flex: 1 1 100%; */
+        padding: 0;
+    }
+    .sidesr {
+        border-left: none;
+        border-top: 2px solid;
     }
 
-    /* .side-1{
-        flex-direction: row;
-    } */
-    .mid{
-        height: 0;
-        width: 0;
-        border: 0;
-    }
-    .sides{
-        flex-direction: column;
-        width: 100%;
-    }
-
-    #trans-button-1>.sides1{
-        border-left: 0 none;
-        border-top: 1px solid black;
-        width: 100%;
-    }
-    #trans-button-1{
+    #trans-button-1 {
         flex-direction: column;
     }
 
-    .sides{
-        justify-content: center;
-        align-items: center;
+    .wrapper-sides1x {
+        width: 150%; /* Set width to fit the container */
+        padding: 40px 0; /* Top and bottom padding for spacing */
+        text-align: center; /* Center-align text content */
+        display: flex; /* Use flexbox for alignment */
+        flex-direction: column; /* Stack items vertically */
+        align-items: center; /* Center items horizontally */
+        justify-content: center; /* Center items vertically */
+        transform: translateX(-15%); /* Offset the excess width to center it */
     }
-
-    .wrapper-carousel{
-        height: max-content;
+    
+    #trans-button-1 {
+        min-height: max-content;
+        display: flex; /* Use flexbox */
+        flex-direction: column; /* Maintain side-by-side alignment */
+        justify-content: center; /* Center items horizontally */
+        align-items: center; /* Center items vertically */
+        width: 100%; /* Full width */
+        border-radius: 10px;
+        padding: 20px;
+        gap: 20px; /* Space between sides */
     }
-
-    #carouselExampleCaptions{
-        height: max-content;
-    }
+    
 }
 
+
+/* .button-area {
+    display: flex;
+    flex-direction: column; /* Stack items vertically 
+    justify-content: flex-start; /* Align items at the top of the column 
+    align-items: flex-end; /* Align items to the right 
+    position: absolute;
+    right: 100px;
+    gap: 10px;
+    margin-top: -20px;
+} */

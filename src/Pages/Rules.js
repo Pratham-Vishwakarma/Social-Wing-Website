@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import '../Styles/Rules.css';
 import styled from 'styled-components';
 
@@ -24,6 +24,10 @@ const H3 = styled.h3`
 `;
 
 const Rules = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top-left corner
+  }, []); // Empty dependency array ensures it runs only on component mount
+
   return (
     <div className='rules'>
         <H1 className='title'>Rules and Regulations</H1>

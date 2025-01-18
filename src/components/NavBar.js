@@ -81,7 +81,6 @@ export default function NavBar() {
           aria-expanded={isMobileMenuOpen ? "true" : "false"}
           onClick={toggleMobileMenu}
         >
-          <span className="sr-only">Open main menu</span>
           {/* Icon when menu is closed */}
           {!isMobileMenuOpen ? (
             <svg

@@ -86,7 +86,7 @@ body {
 /* Individual nav link items */
 .nav-link-item a {
     text-decoration: none;
-    color: #e5e7eb;
+    color: #fff !important;
     font-weight: 600;
     padding: 0.5rem 0.5rem;
     border-radius: 10px;
@@ -95,8 +95,7 @@ body {
 }
   
 .nav-link-item a:hover {
-    background: rgb(188, 122, 0);
-    color: #ffffff;
+    background: rgb(146, 95, 0);
 }
 
 /* Hide nav links on mobile */

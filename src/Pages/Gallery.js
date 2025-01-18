@@ -1,88 +1,12 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import '../Styles/Gallery.css';
-// import CloseIcon from '@mui/icons-material/Close';
 import { IoIosCloseCircle } from "react-icons/io";
-
-import Img1 from '../Images/gallery/img1.jpg';
-import Img2 from '../Images/gallery/img2.jpg';
-import Img3 from '../Images/gallery/img3.jpg';
-import Img4 from '../Images/gallery/img4.JPG';
-import Img5 from '../Images/gallery/img5.JPG';
-import Img6 from '../Images/gallery/img6.jpg';
-import Img7 from '../Images/gallery/img7.jpg';
-import Img8 from '../Images/gallery/img8.jpg';
-import Img9 from '../Images/gallery/img9.jpg';
-import Img10 from '../Images/gallery/img10.jpg';
-import Img11 from '../Images/gallery/img11.jpg';
-import Img12 from '../Images/gallery/img12.jpeg';
-import Img13 from '../Images/gallery/img13.jpg';
-import Img14 from '../Images/gallery/img14.jpg';
-import Img15 from '../Images/gallery/img15.jpg';
+import { data } from '../components/Images';
 
 const Gallery = () => {
-
-  let data =[
-    {
-        id: 1,
-        imgSrc: Img1,
-    },
-    {
-      id: 2,
-      imgSrc: Img2,
-    },
-    {
-      id: 3,
-      imgSrc: Img3,
-    },
-    {
-      id: 4,
-      imgSrc: Img4,
-    },
-    {
-      id: 5,
-      imgSrc: Img5,
-    },
-    {
-      id: 6,
-      imgSrc: Img6,
-    },
-    {
-      id: 7,
-      imgSrc: Img7,
-    },
-    {
-      id: 8,
-      imgSrc: Img8,
-    },
-    {
-      id: 9,
-      imgSrc: Img9,
-    },
-    {
-      id: 10,
-      imgSrc: Img10,
-    },
-    {
-      id: 11,
-      imgSrc: Img11,
-    },
-    {
-      id: 12,
-      imgSrc: Img12,
-    },
-    {
-      id: 13,
-      imgSrc: Img13,
-    },
-    {
-      id: 14,
-      imgSrc: Img14,
-    },
-    {
-      id: 15,
-      imgSrc: Img15,
-    },
-  ]
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top-left corner
+  }, []); // Empty dependency array ensures it runs only on component mount
   const [model, setModel] = useState(false);
   const [tempimgSrc, setTempImgSrc] = useState('');
   
@@ -91,26 +15,24 @@ const Gallery = () => {
     setModel(true);
   }
   return (
-    <>
-    <div className={model? "model open" : "model"}>
-        <img src={tempimgSrc} /> 
-        <IoIosCloseCircle onClick={() => setModel(false)} />
+    <div className="gallery-container">
+      <div className={model? "model open" : "model"}>
+          <img src={tempimgSrc} /> 
+          <IoIosCloseCircle onClick={() => setModel(false)} />
+      </div>
+      <div className="py-4">
+        <h1 style={{textAlign: 'center',}}>Events Gallery</h1>
+      </div>    
+      <div className="gallery">
+          {data.map((item, index)=>{
+              return(
+                <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
+                    <img src={item.imgSrc} style={{width: '100%', padding: '3px'}} />
+                </div>
+              )
+          })}
+      </div>    
     </div>
-    <div class="py-5">
-      <h1 style={{textAlign: 'center',}}>Events Gallery</h1>
-    </div>
-    
-    <div className="gallery">
-        {data.map((item, index)=>{
-            return(
-              <div className="pics" key={index} onClick={() => getImg(item.imgSrc)}>
-                  <img src={item.imgSrc} style={{width: '100%', padding: '3px'}} />
-              </div>
-            )
-        })}
-    </div>
-    
-    </>
   );
 };
 export default Gallery;

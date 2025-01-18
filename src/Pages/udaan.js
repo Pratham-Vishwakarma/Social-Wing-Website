@@ -5,6 +5,9 @@ import Img2 from '../Images/udaan/white wing.png';
 import Card from "../components/Card";
 
 const Udaan = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0); // Scrolls to the top-left corner
+  }, []); // Empty dependency array ensures it runs only on component mount
 
   // Countdown Script
   var countDownDate = new Date("Feb 9, 2025 00:00:00").getTime();

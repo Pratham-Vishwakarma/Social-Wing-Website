@@ -5,16 +5,6 @@
   font-weight: bold;
  }
 
-.card1{
-    padding: 10px;
-}
-
-.card2{
-    padding: 30px;
-    border-radius: 15px 50px 30px;
-    box-shadow: 10px 10px;
-    background-color: #f6d992;
-}
 
 .herosection{
     width: 50%;
