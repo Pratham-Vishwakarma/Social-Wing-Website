@@ -163,13 +163,14 @@ export const jointCore = [
     {
         imgUrl: team29,
         name: 'I Don\'t Know',
-        position1: 'Design Head', //Editor in Chief
+        position1: 'Design Head',
     },
   
     {
         imgUrl: team30,
         name: 'Rutuparna Dalvi',
         position1: 'Design Head',
+        instagram: 'https://www.instagram.com/rutudalvi16?igsh=dnZmaDU2bTl5bDd5',
     },
 
     {
@@ -188,13 +189,13 @@ export const jointCore = [
     {
         imgUrl: team33,
         name: 'Aashka Gupta',
-        position1: 'Chief Technical Officer',//Creative HEad
+        position1: 'Chief Technical Officer',
     },
 
     {
         imgUrl: team34,
         name: 'Pratham Vishwakarma',
-        position1: 'Chief Technical Officer',//Creative Head
+        position1: 'Chief Technical Officer',
     },
 
     {
@@ -206,7 +207,8 @@ export const jointCore = [
     {
         imgUrl: team36,
         name: 'Utkarsha Ranvir',
-        position1: 'Creative Head',//DataBase Head
+        position1: 'Creative Head',
+        instagram: 'https://www.instagram.com/utkarsharanvir?igsh=NTFhdmM0enNnM2Rl',
     },
 
     {
@@ -218,7 +220,9 @@ export const jointCore = [
     {
         imgUrl: team38,
         name: 'Utkarsh Gosavi',
-        position1: 'Database Head',//SponserShip
+        position1: 'Database Head',
+        linkedin: 'https://www.linkedin.com/in/utkarsh-gosavi-35a450277?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        instagram: 'https://www.instagram.com/utkarsh_1506?igsh=cndubzVjeXAwczZ1',
     },
 
     {
