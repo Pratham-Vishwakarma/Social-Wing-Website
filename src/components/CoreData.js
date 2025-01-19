@@ -16,6 +16,9 @@ export const core = [
         imgUrl: team05,
         name: 'Raj Pawar',
         position1: 'Vice President',
+        linkedin: 'https://www.linkedin.com/in/raj-pawar-1624b4255?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+        twitter: 'https://x.com/rajpawar574?s=21',
+        instagram: 'https://www.instagram.com/rajpawar._?igsh=MXZ4bTBkejU3djYyaw%3D%3D&utm_source=qr',
     },
   
     {

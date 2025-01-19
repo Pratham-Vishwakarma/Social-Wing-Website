@@ -48,6 +48,8 @@ export const jointCore = [
         imgUrl: team12,
         name: 'Pratik Singh',
         position1: 'Marketing Head',
+        linkedin: 'https://www.linkedin.com/in/pratik-singh-194764254?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        instagram: 'https://www.instagram.com/its_pratiksingh07?igsh=dzVjMmduOTV3N3gy',
     },
     
     {
@@ -72,6 +74,7 @@ export const jointCore = [
         imgUrl: team16,
         name: 'Aditi Gupta',
         position1: 'Public Relations Officer',
+        instagram: 'https://www.instagram.com/aditiii_281?igsh=MXZoY3g4dTJwOXhhdA==',
     },
 
     {
@@ -90,12 +93,19 @@ export const jointCore = [
         imgUrl: team19,
         name: 'Amey Somade',
         position1: 'Digital Marketing Head',
+        linkedin: 'https://in.linkedin.com/in/amey-somade-12a09a1aa',
+        twitter: 'https://x.com/Ameyzzingggg?t=RkWiP64hJB_5_xH2K_0LsA&s=09',
+        instagram: 'https://www.instagram.com/ameyzzinggg?igsh=MXBleTRyZjhtc3Z1dg==',
+        facebook: 'https://www.facebook.com/share/1524PfexTM/',
     },
 
     {
         imgUrl: team20,
         name: 'Riya Kishor Salunkhe',
-        position1: 'Digital Marketing Head',//orphange coordinator
+        position1: 'Digital Marketing Head',
+        linkedin: 'https://www.linkedin.com/in/riya-salunkhe-763864321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        instagram: 'https://www.instagram.com/riyasalunkhe.26?igsh=Y3Vlc3dsNmUwZzl3',
+        facebook: 'https://www.facebook.com/riya.salunkhe.773',
     },
 
     {
@@ -114,6 +124,8 @@ export const jointCore = [
         imgUrl: team23,
         name: 'Harsh Ostwal',
         position1: 'Logistics Head',
+        linkedin: 'https://www.linkedin.com/in/harsh-ostwal-8b1b27247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+        instagram: 'https://www.instagram.com/harshh_ostwal?igsh=aGMxMmNuc3RxY2U4&utm_source=qr',
     },
   
     {
@@ -144,6 +156,8 @@ export const jointCore = [
         imgUrl: team28,
         name: 'Apoorva Patil',
         position1: 'Design Head',
+        linkedin: 'https://www.linkedin.com/in/apoorva-patil-489337288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        instagram: 'https://www.instagram.com/apoorva_.14/profilecard/?igsh=MWM2aXgxajE2cDg5Mw==',
     },
     
     {
@@ -161,7 +175,8 @@ export const jointCore = [
     {
         imgUrl: team31,
         name: 'Josy Jose',
-        position1: 'Editor In Chief',//CTO
+        position1: 'Editor In Chief',
+        instagram: 'https://www.instagram.com/josy_christ142?igsh=ZnNsZXVycnhreDNl&utm_source=qr',
     },
 
     {

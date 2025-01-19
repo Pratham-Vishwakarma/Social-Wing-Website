@@ -1,9 +1,9 @@
 .bg-image1{
-    background-image: url(../Images/udaan/bgudaan.png);
+    background-image: url(../Images/Udaan/bgudaan.png);
 }
 
 .bg-image2{
-    background-image: url(../Images/udaan/mapbg.JPG);
+    background-image: url(../Images/Udaan/mapbg.JPG);
 }
 
 @media screen and (max-width: 768px){

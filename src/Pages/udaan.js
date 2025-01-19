@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import '../Styles/Udaan.css';
-import Img1 from '../Images/udaan/udaanlogo.png';
+import Img1 from '../Images/Assets/udaanlogo.png';
 import Img2 from "../Images/Assets/whitesowlogo.png";
 import Card from "../components/Card";
 
@@ -116,7 +116,7 @@ const Udaan = () => {
         </div>
         <div className="about-right-side">
           <img
-            src="https://lh3.googleusercontent.com/4CJGh-gXHUbFbaY_CDK6YoT4c6f_FcoYayjWFUd4Hs3s9Gk-UlUpQpc0oDgit9Kb5JU=w2400"
+            src="../Images/Udaan/IMG_1399.jpg"
             alt="Kid sitting Udaan"
           />
         </div>
@@ -125,7 +125,7 @@ const Udaan = () => {
       <div id="about-udaan" className="section even">
         <div className="about-right-side">
           <img
-            src="https://lh3.googleusercontent.com/4CJGh-gXHUbFbaY_CDK6YoT4c6f_FcoYayjWFUd4Hs3s9Gk-UlUpQpc0oDgit9Kb5JU=w2400"
+            src="../Images/Udaan/IMG_1399.jpg"
             alt="Kid sitting Udaan"
           />
         </div>

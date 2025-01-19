@@ -7,7 +7,7 @@ import Events from './Pages/Events';
 import Team from './Pages/Team';
 import NSS from './Pages/NSS';
 import Gallery from './Pages/Gallery';
-import Udaan from './Pages/udaan';
+import Udaan from './Pages/Udaan';
 import Rules from './Pages/Rules';
 import Location from './Pages/Location';
 
@@ -15,7 +15,6 @@ function App() {
   return (
     <Router>
       <NavBar/>
-
         <Routes>
           <Route path="/" element={<Home/>}/>
           <Route path="/events" element={<Events/>}/>
@@ -26,7 +25,6 @@ function App() {
           <Route path="/rules" element={<Rules/>}/>
           <Route path="/location" element={<Location/>}/>
         </Routes>
-
       <Footer/>
     </Router>
   );

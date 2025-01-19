@@ -2,15 +2,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black; /* Set the background to black */
+  background-color: #181a1b; /* Set the background to black */
   color: #e4e4e4; /* Optional: Adjust text color for readability */
 }
-
-/* code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
-.font-link {
-  font-family: 'Roboto Slab', cursive;
-} */

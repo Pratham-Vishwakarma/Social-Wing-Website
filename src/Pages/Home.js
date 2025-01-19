@@ -49,7 +49,7 @@ function Home() {
           <div className="logo-column">
             <img 
               className="logo" 
-              src={require("../Images/udaan/udaanlogo.png")} 
+              src={require("../Images/Assets/udaanlogo.png")} 
               alt="Event Logo" 
             />
           </div>

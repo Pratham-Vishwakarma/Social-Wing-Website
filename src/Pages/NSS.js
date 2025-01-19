@@ -1,6 +1,6 @@
 import React, {useEffect} from "react";
 import '../Styles/Nss.css';
-import Img1 from '../Images/nss/nss_logo (3).png';
+import Img1 from '../Images/Assets/nss_logo (3).png';
 
 const NSS = () => {
   useEffect(() => {

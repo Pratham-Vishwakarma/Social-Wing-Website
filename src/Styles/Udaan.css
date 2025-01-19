@@ -3,10 +3,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-
 /*Udaan Hero Poster*/
 .udaan-hero {
-background: url(../Images/udaan/udaanbg2.png) no-repeat center center/cover;
+background: url(../Images/Udaan/udaanbg2.png) no-repeat center center/cover;
 padding: 120px 0 30px;
 }
 
@@ -131,7 +130,7 @@ flex-direction: column;
 justify-content: center;
 align-items: center;
 background: rgba(255, 228, 175, 0.1);
-border: 2px solid rgba(113, 82, 18, 0.3);
+border: 2px solid rgba(82, 56, 5, 0.3);
 border-radius: 15px;
 padding: 20px;
 width: 100px;

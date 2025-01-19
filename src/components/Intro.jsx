@@ -1,5 +1,5 @@
 import React from 'react';
-import IMG16 from "../Images/Events/sow logo.jpg";
+import IMG16 from "../Images/Assets/sow logo.jpg";
 import styled from 'styled-components';
 
 const IMG = styled.img`

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import IMG16 from "../Images/Assets/whitesowlogo.png";
 import "../Styles/Footer.css"; // Custom styles for the footer
+import IMG16 from "../Images/Assets/whitesowlogo.png";
 import IMG1 from "../Images/Assets/insta.png";
 import IMG2 from "../Images/Assets/facebook.png";
 import IMG3 from "../Images/Assets/linkedin.png";

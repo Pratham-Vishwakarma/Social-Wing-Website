@@ -5,7 +5,7 @@ import "../Styles/Events.css"; // Custom styles for events
 const Events = () => {
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top-left corner
-  }, []); // Empty dependency array ensures it runs only on component mount
+  }, []);
   return (
     <div className="events">
       <main className="container">
@@ -21,7 +21,6 @@ const Events = () => {
                 />
                 <div className="event-card-body">
                   <h5>{props.title}</h5>
-                  {/* <p>{props.info}</p> */}
                 </div>
               </div>
             </div>

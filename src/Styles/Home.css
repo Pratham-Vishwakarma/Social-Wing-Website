@@ -35,7 +35,7 @@
   justify-content: center;
   align-items: center;
   background: rgba(255, 228, 175, 0.1);
-  border: 2px solid rgba(113, 82, 18, 0.3);
+  border: 2px solid rgba(82, 56, 5, 0.3);
   border-radius: 15px;
   padding: 20px;
   width: 200px;  /* Adjust width to ensure proper spacing */
@@ -58,7 +58,7 @@ body {
 
 .container1 {
   padding: 20px;
-  background: url('../Images/udaan/bgudaan.png');
+  background: url('../Images/Udaan/bgudaan.png');
 }
 
 .event-details {
