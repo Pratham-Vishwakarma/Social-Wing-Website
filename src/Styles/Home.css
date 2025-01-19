@@ -1,11 +1,3 @@
-@font-face {
-  font-family: "sequel100black85";
-  src: local("sequel100black85"),
-   url("../Styles/sequel-100-black-85.ttf") format("truetype");
-  font-weight: bold;
- }
-
-
 .herosection{
     width: 50%;
     height: auto;
@@ -16,23 +8,16 @@
     column-gap: 40px;
 }
 
-@media (max-width: 991px){
-  .homesection{
-    flex-direction: column;
-}
-}
-
 /* Stats Bar */
 #event-stats-div { /* Stats Container */
   height: auto;
   padding: 40px 10px;
-  background: linear-gradient(135deg, #FFA500, #FFB833);
+  background: linear-gradient(135deg, #c88200, #b07300);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
   gap: 40px;
-  color: white;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   text-align: center;
 }
@@ -49,8 +34,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: rgba(255, 255, 255, 0.1);
-  border: 2px solid rgba(255, 255, 255, 0.3);
+  background: rgba(255, 228, 175, 0.1);
+  border: 2px solid rgba(113, 82, 18, 0.3);
   border-radius: 15px;
   padding: 20px;
   width: 200px;  /* Adjust width to ensure proper spacing */
@@ -62,21 +47,6 @@
 .stat-box:hover {
   transform: scale(1.1);
   background: rgba(255, 255, 255, 0.2);
-}
-
-@media (max-width: 768px) { /* Responsive Design */  
-  .stat-box {
-    width: 120px;  /* Adjust width for smaller screens */
-    height: 140px; /* Adjust height for consistency */
-  }
-
-  .stat-value h1 {
-    font-size: 1.3rem; /* Adjust font size for better fit */
-  }
-
-  .stat-label h4 {
-    font-size: 1rem; /* Adjust label font size */
-  }
 }
 
 /* Banner css */
@@ -140,11 +110,7 @@ body {
 }
 
 button {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 5px;
+  border-radius: 25px !important; /* Increased border radius for more rounded buttons */
   cursor: pointer;
 }
 
@@ -224,7 +190,6 @@ button:hover {
     width: 1px;
     height: 60px;
     border-radius: 50%;
-    box-shadow: 0 5px 20px 15px gold, 0 0px 100px 20px #ff6a00, 0 15px 50px 15px #ff6a00, 5px 30px 5px 13px #ff6a00, 5px 50px 5px 13px #ff6a00, 0 75px 50px 30px black;
   }
   .flame .bottom {
     transform: scale(0.9);
@@ -310,7 +275,19 @@ button:hover {
     }
   }
 
-/* Responsive Design of Udaan Banner */
+/* Responsive Design*/
+@media screen and (max-width: 1080px) {
+  .candle {
+    margin-top: -150px;
+  }
+}
+
+@media (max-width: 991px){
+  .homesection{
+    flex-direction: column;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .event-details {
     flex-direction: column; /* Stack columns */
@@ -328,11 +305,35 @@ button:hover {
 
   .homesection{
     height: 200px;
+  }    
+
+  .stat-box {
+    width: 120px;  /* Adjust width for smaller screens */
+    height: 140px; /* Adjust height for consistency */
+  }
+
+  .stat-value h1 {
+    font-size: 1.3rem; /* Adjust font size for better fit */
+  }
+
+  .stat-label h4 {
+    font-size: 1rem; /* Adjust label font size */
   }
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 500px) {
+  .logo {
+    width: 200px;
+    height: auto;
+    justify-content: center;
+  }
+
+  .homesection{
+    height: 400px;
+  } 
+  
   .candle {
-    margin-top: -150px;
+    width: 34px;
+    margin-right: -40px;
   }
 }

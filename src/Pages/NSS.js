@@ -21,12 +21,12 @@ const NSS = () => {
         </div>
       </div>
 
-      <div className="cardx-2">        
-        <div className="button-area">
-          <a id="bt-1" href="#trans-button-1"><button className="custom-btn btn-1">What We Do?</button></a>
-          <a id="bt-2" href="/events"><button className="custom-btn btn-2">NSS Events</button></a>
-        </div>
-        <div className="cardx-nss-1">
+      <div className="cardx-2">
+        <div className="cardx-nss-1">        
+          <div className="button-area">
+            <a id="bt-1" href="#trans-button-1"><button className="custom-btn btn-1">Our Work</button></a>
+            <a id="bt-2" href="/events"><button className="custom-btn btn-2">NSS Events</button></a>
+          </div>
           <div className="cardx-nss-2">
             <div id="trans-button-1">
               <div className="sides">
@@ -46,22 +46,24 @@ const NSS = () => {
                 </div>
               </div>
               <div className="sides sidesr">
-                <div className="wrapper-sides1x">
-                  <h2 className="text-2xl font-semibold text-white dark:text-gray-800">What we do</h2>
-                  <br/>
-                  <p>
-                    Some of the prominent activities carried out by our NSS-RAIT unit in
-                    collaboration with SocialWing-RAIT are: Road Safety Awareness
-                    Seminar, AIDS Awareness Campaign, Youth Week Celebration, National
-                    Girl Child Day Celebration, Martyr's Day, Rashtriya Ekta Diwas
-                    Celebration, Global Warming Awareness Campaign, Election Awareness
-                    Campaign: Street Play, Plogging, Poshan Mah: Awareness on the
-                    importance of Nutrition, NSS Residential Camp. The NSS Residential
-                    camp is an annual camping event where students get to camp at a
-                    village for 7 days and indulge in team-building exercises along with
-                    carrying out social work which in turn gives them exposure to the
-                    rural sections of our nation and teaches them self-sustainability.
-                  </p>
+                <div className="wrapper-bottom">
+                  <div className="wrapper-sides1x">
+                    <h2 className="text-2xl font-semibold text-white dark:text-gray-800">What we do</h2>
+                    <br/>
+                    <p>
+                      Some of the prominent activities carried out by our NSS-RAIT unit in
+                      collaboration with SocialWing-RAIT are: Road Safety Awareness
+                      Seminar, AIDS Awareness Campaign, Youth Week Celebration, National
+                      Girl Child Day Celebration, Martyr's Day, Rashtriya Ekta Diwas
+                      Celebration, Global Warming Awareness Campaign, Election Awareness
+                      Campaign: Street Play, Plogging, Poshan Mah: Awareness on the
+                      importance of Nutrition, NSS Residential Camp. The NSS Residential
+                      camp is an annual camping event where students get to camp at a
+                      village for 7 days and indulge in team-building exercises along with
+                      carrying out social work which in turn gives them exposure to the
+                      rural sections of our nation and teaches them self-sustainability.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

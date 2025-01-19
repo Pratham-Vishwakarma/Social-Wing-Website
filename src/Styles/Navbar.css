@@ -20,18 +20,18 @@ body {
 .icon {
     width: 35px;   /* Adjust the width of the icon */
     height: 35px;  /* Adjust the height of the icon */
-    color: #333;   /* Define the stroke color for visibility */
+    color: #d6d6d6;   /* Define the stroke color for visibility */
 }
 
 /* Active state for the mobile menu button */
 .mobile-menu-button.active {
-    background-color: rgba(0, 0, 0, 0);  /* Light background when clicked */
+    background-color: rgba(255, 255, 255, 0);  /* Light background when clicked */
     border-radius: 50%;  /* Optional: Makes the button round */
 }
 
 /* InActive state for the mobile menu button */
 .mobile-menu-button {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
     display: none;
     border: none;
     color: #ffffff;
@@ -50,7 +50,7 @@ body {
     top: 0;
     width: 90%;
     margin: 1rem auto;
-    background: #FFA500;
+    background: #cc8400;
     border-radius: 20px;
     padding: 0.5rem 1rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -86,7 +86,7 @@ body {
 /* Individual nav link items */
 .nav-link-item a {
     text-decoration: none;
-    color: #fff !important;
+    color: #e4e4e4 !important;
     font-weight: 600;
     padding: 0.5rem 0.5rem;
     border-radius: 10px;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import '../Styles/Gallery.css';
 import { IoIosCloseCircle } from "react-icons/io";
-import { data } from '../components/Images';
+import { data } from '../components/ImageData';
 
 const Gallery = () => {
   useEffect(() => {

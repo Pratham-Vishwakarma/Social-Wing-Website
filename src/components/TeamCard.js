@@ -4,7 +4,7 @@ const TeamCard = ({ imgUrl, name, position1, position2, linkedin, twitter, faceb
   return (
     <div className='team__item'>
       <div className='team__img'>
-        <img loading="lazy" src={imgUrl} alt={name} />
+        <img src={imgUrl} alt={name} />
       </div>
       <div className='team__details'>
         <h4>{name}</h4>

@@ -1,11 +1,10 @@
 /* Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,200&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap'); */
 
 * {
     font-family: 'Poppins', sans-serif !important;
     padding: 0;
-    box-sizing: border-box;
 }
 
 body {
@@ -68,6 +67,7 @@ body {
     margin-top: -20px;
 }
 
+
 /* Button Styling */
 .button-area > #bt-1 > button {
     background-color: #FFA500;
@@ -115,13 +115,14 @@ body {
 .cardx-nss-1{
     padding: 10px;
     width: 95%;
+    margin-right: 10px;
 }
 
 .cardx-nss-2{
     padding: 30px;
     border-radius: 50px;
     box-shadow: 15px 15px;
-    background: linear-gradient(90deg, #FFA500, #ffd27f) !important;
+    background: linear-gradient(90deg, #bc7b00, #815300) !important;
 }
 
 #trans-button-1 {
@@ -188,10 +189,10 @@ h2 {
     .sides {
         /* flex: 1 1 100%; */
         padding: 0;
+        width: 400px;
     }
     .sidesr {
         border-left: none;
-        border-top: 2px solid;
     }
 
     #trans-button-1 {
@@ -199,16 +200,18 @@ h2 {
     }
 
     .wrapper-sides1x {
-        width: 150%; /* Set width to fit the container */
-        padding: 40px 0; /* Top and bottom padding for spacing */
-        text-align: center; /* Center-align text content */
-        display: flex; /* Use flexbox for alignment */
-        flex-direction: column; /* Stack items vertically */
-        align-items: center; /* Center items horizontally */
-        justify-content: center; /* Center items vertically */
-        transform: translateX(-15%); /* Offset the excess width to center it */
+        padding: 40px 0;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
     
+    .wrapper-bottom{        
+        border-top: 2px solid;
+    }
+
     #trans-button-1 {
         min-height: max-content;
         display: flex; /* Use flexbox */
@@ -223,14 +226,34 @@ h2 {
     
 }
 
+@media screen and (max-width: 570px) {
+    /* .button-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-end; 
+        position: absolute;
+        right: 100px;
+        gap: 10px;
+        margin-top: -20px;
+        width: 50%;
+    } */
 
-/* .button-area {
-    display: flex;
-    flex-direction: column; /* Stack items vertically 
-    justify-content: flex-start; /* Align items at the top of the column 
-    align-items: flex-end; /* Align items to the right 
-    position: absolute;
-    right: 100px;
-    gap: 10px;
-    margin-top: -20px;
-} */
+    .sides {
+        /* flex: 1 1 100%; */
+        padding: 0;
+        width: 250px;
+    }
+
+    .button-area {
+        margin-right: -70px;
+    }
+
+    .button-area > #bt-1 > button {
+        width: 150px;
+    }
+
+    .button-area > #bt-2 > button {
+        width: 150px;
+    }
+}

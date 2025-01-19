@@ -1,214 +1,227 @@
-import team10 from '../Images/teams/raj_ec.jpg'
-import team11 from '../Images/teams/atharva_ec.jpg'
-import team12 from '../Images/teams/nikhil_market.jpg'
-import team13 from '../Images/teams/raj_market.jpg'
-import team14 from '../Images/teams/amey_market.jpg'
-import team15 from '../Images/teams/ishwari_pro.jpg'
-import team16 from '../Images/teams/kaarthik_pro.jpg'
-import team17 from '../Images/teams/om_dmh.jpg'
-import team18 from '../Images/teams/lamiya_dmh.jpg'
-import team19 from '../Images/teams/shreyas_dmh.jpg'
-import team20 from '../Images/teams/ahana_oc.jpg'
-import team21 from '../Images/teams/sahil_logi.jpg'
-import team22 from '../Images/teams/vikas_logi.jpg'
-import team23 from '../Images/teams/arya_logi.jpg'
-import team24 from '../Images/teams/rajan_logi.jpg'
-import team25 from '../Images/teams/shakti_design.jpg'
-import team26 from '../Images/teams/pranav_design.jpg'
-import team27 from '../Images/teams/gunjan_design.jpg'
-import team28 from '../Images/teams/khushi_design.jpg'
-import team29 from '../Images/teams/anik_eic.jpg'
-import team30 from '../Images/teams/shubh_eic.jpg'
-import team31 from '../Images/teams/danish_cto.jpg'
-import team32 from '../Images/teams/dhumra_cto.jpg'
-import team33 from '../Images/teams/anushka_creative.jpg'
-import team34 from '../Images/teams/aditi_creativ.jpg'
-import team35 from '../Images/teams/neha_creativ.jpg'
-import team36 from '../Images/teams/pratham_dbh.jpg'
-import team37 from '../Images/teams/gaurav_dbh.jpg'
-import team38 from '../Images/teams/aarush_sponser.jpg'
-import team39 from '../Images/teams/arjun_sponsor.jpg'
+import team10 from '../Images/JCTeam/EVENT COORDINATOR/1.jpg'
+import team11 from '../Images/JCTeam/EVENT COORDINATOR/vikas ec single.jpg'
+import team12 from '../Images/JCTeam/MARKETING HEADS/IMG_7889.jpg'
+import team13 from '../Images/JCTeam/MARKETING HEADS/IMG_7910.jpg'
+import team14 from '../Images/JCTeam/MARKETING HEADS/IMG_7918.jpg'
+import team15 from '../Images/JCTeam/MARKETING HEADS/IMG_7926.jpg'
+import team16 from '../Images/JCTeam/PUBLIC RELATIONS OFFICER/IMG_7941.jpg'
+import team17 from '../Images/JCTeam/PUBLIC RELATIONS OFFICER/IMG_7944.jpg'
+import team18 from '../Images/JCTeam/DIGITAL MARKETING HEADS/IMG_8061 (1).jpg'
+import team19 from '../Images/JCTeam/DIGITAL MARKETING HEADS/IMG_8075 (1).jpg'
+import team20 from '../Images/JCTeam/DIGITAL MARKETING HEADS/IMG-20240727-WA0079(2).jpg'
+import team21 from '../Images/JCTeam/ORPHANGE COORDINATOR/IMG_7974.jpg'
+import team22 from '../Images/JCTeam/ORPHANGE COORDINATOR/IMG_8087.jpg'
+import team23 from '../Images/JCTeam/LOGISTICS HEADS/harsh logi single.jpg'
+import team24 from '../Images/JCTeam/LOGISTICS HEADS/IMG_7987.jpg'
+import team25 from '../Images/JCTeam/LOGISTICS HEADS/IMG_8020.jpg'
+import team26 from '../Images/JCTeam/LOGISTICS HEADS/IMG_8159.jpg'
+import team27 from '../Images/JCTeam/DESIGN HEADS/IMG_8101.jpg'
+import team28 from '../Images/JCTeam/DESIGN HEADS/IMG_8108.jpg'
+import team29 from '../Images/JCTeam/DESIGN HEADS/IMG_8118.jpg'
+import team30 from '../Images/JCTeam/DESIGN HEADS/IMG_8172.jpg'
+import team31 from '../Images/JCTeam/EDITOR IN CHIEF/IMG_8133.jpg'
+import team32 from '../Images/JCTeam/EDITOR IN CHIEF/IMG_8188.jpg'
+import team33 from '../Images/JCTeam/CHIEF TECHNICAL OFFICER/IMG_7900 (1).jpg'
+import team34 from '../Images/JCTeam/CHIEF TECHNICAL OFFICER/IMG_8085.jpg'
+import team35 from '../Images/JCTeam/CREATIVE HEADS/IMG_7996.jpg'
+import team36 from '../Images/JCTeam/CREATIVE HEADS/IMG_7999.jpg'
+import team37 from '../Images/JCTeam/CREATIVE HEADS/IMG_8026.jpg'
+import team38 from '../Images/JCTeam/DATABASE HEADS/IMG_7957.jpg'
+import team39 from '../Images/JCTeam/DATABASE HEADS/IMG_7967.jpg'
+import team40 from '../Images/JCTeam/SPONSORSHIP HEADS/IMG_8201.jpg'
+import team41 from '../Images/JCTeam/SPONSORSHIP HEADS/IMG_8209.jpg'
 
 export const jointCore = [
     {
         imgUrl: team10,
-        name: 'Raj Kurlekar',
+        name: 'Nikhil Goswami',
         position1: 'Event Co-ordinator',
     },
   
     {
         imgUrl: team11,
-        name: 'Atharva Mane',
+        name: 'Vikas Sharma',
         position1: 'Event Co-ordinator',
     },
   
     {
         imgUrl: team12,
-        name: 'Nikhil Goswami',
+        name: 'Pratik Singh',
         position1: 'Marketing Head',
     },
     
     {
         imgUrl: team13,
-        name: 'Raj Pawar',
+        name: 'Sharv Gawade',
         position1: 'Marketing Head',
     },
 
     {
         imgUrl: team14,
-        name: 'Amey Bhuvad',
+        name: 'Akshara Sabde',
         position1: 'Marketing Head',
     },
   
     {
         imgUrl: team15,
-        name: 'Ishwari Mundake',
-        position1: 'Public Relations Officer',
-        position2: 'NSS RAIT'
+        name: 'Devika Sandanshiv',
+        position1: 'Marketing Head',
     },
     
     {
         imgUrl: team16,
-        name: 'Kaarthik Nalla',
+        name: 'Aditi Gupta',
         position1: 'Public Relations Officer',
     },
 
     {
         imgUrl: team17,
-        name: 'Om Sankhe',
-        position1: 'Digital Marketing Head',
+        name: 'Juilee Shet',
+        position1: 'Public Relations Officer',
     },
   
     {
         imgUrl: team18,
-        name: 'Lamiya Chasmawala',
+        name: 'Heramb Kondilkar',
         position1: 'Digital Marketing Head',
     },
     
     {
         imgUrl: team19,
-        name: 'Shreyas Sindhur',
+        name: 'Amey Somade',
         position1: 'Digital Marketing Head',
     },
 
     {
         imgUrl: team20,
-        name: 'Ahana Shaikh',
-        position1: 'Orphanage Co-ordinator',
+        name: 'Riya Kishor Salunkhe',
+        position1: 'Digital Marketing Head',//orphange coordinator
     },
 
     {
         imgUrl: team21,
-        name: 'Sahil Naikwade',
-        position1: 'Logistics Head',
+        name: 'Swara Mahadik',
+        position1: 'Orphanage Coordinator',
     },
     
     {
         imgUrl: team22,
-        name: 'Vikas Sharma',
-        position1: 'Logistics Head',
+        name: 'I Don\'t Know',
+        position1: 'Orphanage Coordinator',
     },
   
     {
         imgUrl: team23,
-        name: 'Arya Durne',
+        name: 'Harsh Ostwal',
         position1: 'Logistics Head',
     },
   
     {
         imgUrl: team24,
-        name: 'Rajan Shirsath',
+        name: 'Rugved Khedaskar',
         position1: 'Logistics Head',
     },
 
     {
         imgUrl: team25,
-        name: 'Shakti Murugan',
-        position1: 'Design Head',
+        name: 'Sahil Naikwade',
+        position1: 'Logistics Head',
     },
     
     {
         imgUrl: team26,
-        name: 'Pranav S Kumar',
-        position1: 'Design Head',
+        name: 'Viraj Muzumdar',
+        position1: 'Logistics Head',
     },
   
     {
         imgUrl: team27,
-        name: 'Gunjankumar Choudhari',
+        name: 'I Don\'t Know',
         position1: 'Design Head',
     },
 
     {
         imgUrl: team28,
-        name: 'Khushi Tamhankar',
+        name: 'Apoorva Patil',
         position1: 'Design Head',
     },
     
     {
         imgUrl: team29,
-        name: 'Anik Bhosle',
-        position1: 'Editor in Chief',
+        name: 'I Don\'t Know',
+        position1: 'Design Head', //Editor in Chief
     },
   
     {
         imgUrl: team30,
-        name: 'Shubh Kulkarni',
-        position1: 'Editor in Chief',
+        name: 'Rutuparna Dalvi',
+        position1: 'Design Head',
     },
 
     {
         imgUrl: team31,
-        name: 'Danish Ansari',
-        position1: 'Chief Technical Officer',
+        name: 'Josy Jose',
+        position1: 'Editor In Chief',//CTO
     },
 
     {
         imgUrl: team32,
-        name: 'Dhumravarna Ambre',
-        position1: 'Chief Technical Officer',
+        name: 'I Don\'t Know',
+        position1: 'Editor In Chief',
     },
     
     {
         imgUrl: team33,
-        name: 'Anushka Johri',
-        position1: 'Creative Head',
+        name: 'Aashka Gupta',
+        position1: 'Chief Technical Officer',//Creative HEad
     },
 
     {
         imgUrl: team34,
-        name: 'Aditi Salunkhe',
-        position1: 'Creative Head',
+        name: 'Pratham Vishwakarma',
+        position1: 'Chief Technical Officer',//Creative Head
     },
 
     {
         imgUrl: team35,
-        name: 'Neha Bandarkar',
+        name: 'Manali Padalkar',
         position1: 'Creative Head',
     },
 
     {
         imgUrl: team36,
-        name: 'Pratham Shetty',
-        position1: 'Database Head',
+        name: 'Utkarsha Ranvir',
+        position1: 'Creative Head',//DataBase Head
     },
 
     {
         imgUrl: team37,
-        name: 'Gaurav Mishra',
-        position1: 'Database Head',
+        name: 'Ashlesha Gaikwad',
+        position1: 'Creative Head',
     },
 
     {
         imgUrl: team38,
-        name: 'Aarush Mandal',
-        position1: 'Sponsorship Head',
+        name: 'Utkarsh Gosavi',
+        position1: 'Database Head',//SponserShip
     },
 
     {
         imgUrl: team39,
-        name: 'Arjun Sharma',
-        position1: 'Sponsorship Head',
+        name: 'Sujal Lal',
+        position1: 'Database Head',
+    },
+
+    {
+        imgUrl: team40,
+        name: 'I Don\'t Know',
+        position1: 'Sponsership Head',
+    },
+
+    {
+        imgUrl: team41,
+        name: 'Lamiya',
+        position1: 'Sponsership Head',
     },
 
   ]

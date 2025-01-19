@@ -52,7 +52,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "../Styles/Navbar.css";
-import IMG16 from "../Images/teams/whitesocialwing.png";
+import IMG16 from "../Images/Assets/whitesowlogo.png";
 import IMG17 from "../Images/Assets/black dy.png";
 
 export default function NavBar() {
@@ -62,12 +62,16 @@ export default function NavBar() {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
+  };
+
   return (
     <div className="center-flex">
       <nav className="navbar-container">
         {/* Logo and Secondary Logo */}
         <div className="logo-container">
-          <Link to="/">
+          <Link to="/" onClick={closeMobileMenu}>
             <img src={IMG16} alt="Logo" className="sow-logo" />
           </Link>
           <img src={IMG17} alt="Secondary Logo" className="secondary-logo" />
@@ -118,25 +122,26 @@ export default function NavBar() {
         {/* Desktop Links */}
         <ul className={`nav-links ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}>
           <li className="nav-link-item">
-            <Link to="/">Home</Link>
+            <Link to="/" onClick={closeMobileMenu}>Home</Link>
           </li>
           <li className="nav-link-item">
-            <Link to="/events">Events</Link>
+            <Link to="/events" onClick={closeMobileMenu}>Events</Link>
           </li>
           <li className="nav-link-item">
-            <Link to="/team">Team</Link>
+            <Link to="/team" onClick={closeMobileMenu}>Team</Link>
           </li>
           <li className="nav-link-item">
-            <Link to="/nss">NSS</Link>
+            <Link to="/nss" onClick={closeMobileMenu}>NSS</Link>
           </li>
           <li className="nav-link-item">
-            <Link to="/gallery">Gallery</Link>
+            <Link to="/gallery" onClick={closeMobileMenu}>Gallery</Link>
           </li>
           <li className="nav-link-item">
-            <Link to="/udaan">Udaan</Link>
+            <Link to="/udaan" onClick={closeMobileMenu}>Udaan</Link>
           </li>
         </ul>
       </nav>
     </div>
   );
 }
+

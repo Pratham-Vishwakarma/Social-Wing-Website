@@ -1,42 +1,5 @@
 /* Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
-/* CSS Variables for Colors */
-:root {
-  --primary-color: #ff6f00;
-  --heading-color: #333;
-  --btn-primary-bg: #ff6f00;
-  --btn-secondary-bg: #090238;
-  --team-card-bg: #1c2a4a;
-  --link-color: #fff;
-  --link-active: #ff6f00;
-  --card-bg: linear-gradient(45deg, rgba(30, 39, 90, 1) 33%, rgba(40, 50, 100, 1) 84%);
-  --counter-color: linear-gradient(90deg, #4b89c4 30%, rgba(50, 115, 180, 1) 55%, rgba(60, 120, 180, 1) 75%);
-  --body-bg: #f4f4f9;
-  --newsletter-bg: linear-gradient(90deg, rgba(30, 25, 60, 1) 20%, rgba(40, 35, 80, 1) 100%);
-  --testimonial-bg: #23263b;
-  --font-name: "Poppins", sans-serif;
-  --small-text-color: #c8c8c8;
-  --icon-bg: #0a123f;
-}
-
-/* Light Theme Styles */
-.light-theme {
-  --body-bg: rgb(255, 255, 255);
-  --heading-color: #0c123d;
-  --btn-secondary-bg: #816aff;
-  --btn-primary-bg: #fff;
-  --primary-color: #816aff;
-  --counter-color: #fff;
-  --counter-section-bg: #816aff;
-  --link-color: #0c123d;
-  --link-active: #816aff;
-  --newsletter-bg: linear-gradient(180deg, rgba(189, 243, 255, 1) 29%, rgba(193, 243, 255, 1) 50%, rgba(226, 250, 255, 1) 78%);
-  --small-text-color: #000;
-  --card-bg: #fff;
-  --testimonial-bg: #f7f7f7;
-  --team-card-bg: #fff;
-}
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap'); */
 
 /* Base Styles */
 .team {

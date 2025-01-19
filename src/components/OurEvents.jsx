@@ -13,9 +13,14 @@ margin-bottom: 20px;
 margin-top: 30px;
 `;
 
-const HH1 = styled.h1`
+const HH1 = styled.span`
 text-align: center;
 margin-top: 30px;
+background-color: rgba(0, 0, 0, 0.5);
+border-radius: 10px;
+font-size: 2em;
+font-weight: 600;
+padding: 10px;
 @media only screen and (max-width: 480px) {
 margin-bottom: 10px;
 font-size: 15px;
@@ -41,7 +46,7 @@ const CarouselButton = styled.button`
 const OurEvents = (props) => {
   return (
     <div className="mb-3">
-      <H1 className="display-5 fw-bold text-body-emphasis">Our Events</H1>
+      <H1 className="display-5 fw-bold">Our Events</H1>
       <div id="myCarousel" className="carousel slide mb-6" data-bs-ride="carousel">
         <div className="carousel-indicators">
           <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>

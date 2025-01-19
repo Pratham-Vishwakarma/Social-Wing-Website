@@ -1,6 +1,6 @@
-import team01 from '../Images/teams/Sharad Jaghav.jpg'
-import team02 from '../Images/teams/nitin-sirps-removebg-preview.jpg'
-import team03 from '../Images/teams/mansi-maam1-removebg-preview.jpg'
+import team01 from '../Images/FacultyTeam/Sharad Jaghav.jpg'
+import team02 from '../Images/FacultyTeam/nitin-sirps-removebg-preview.jpg'
+import team03 from '../Images/FacultyTeam/mansi-maam1-removebg-preview.jpg'
 
 export const faculty = [
     {
@@ -22,7 +22,5 @@ export const faculty = [
         name: 'Ms. Mansi Jawale',
         position1: 'Program Officer',
         position2: 'NSS RAIT'
-    },
-    
-    
+    },    
   ]

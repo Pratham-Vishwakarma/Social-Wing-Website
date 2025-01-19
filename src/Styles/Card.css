@@ -5,3 +5,10 @@
 .bg-image2{
     background-image: url(../Images/udaan/mapbg.JPG);
 }
+
+@media screen and (max-width: 768px){
+    .know-more{
+        margin-top: 20px;
+    }
+    
+}

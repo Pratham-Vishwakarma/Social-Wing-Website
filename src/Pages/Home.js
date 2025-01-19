@@ -4,14 +4,13 @@ import '../Styles/Home.css'
 import IntroData from '../components/IntroData'
 import Intro from '../components/Intro'
 import OurEvents from '../components/OurEvents'
-import '../Styles/sequel-100-black-85.ttf'
 
 const H1 = styled.h1`
 font-size: 4rem;
 text-align: left;
 margin-top:15px;
 margin-bottom: 10px;
-color: white;
+color: #e2e2e2;
 @media (max-width: 768px) {
     font-size: 2.5rem;
 }
@@ -19,20 +18,14 @@ color: white;
 const H2 = styled.h1`
 font-size: 2rem;
 text-align: left;
-color: white;
+color: #e2e2e2;
 @media (max-width: 768px) {
   font-size: 1.5rem;
 }
 `
-const H3 = styled.h1`
-font-size: 4rem;
-text-align: center;
-`
-const P = styled.p`
-text-align: center;
-`
+
 const DefaultButton = styled.button`
-background-color: #FFA500;
+background-color: #cc8400;
 border: none;
 padding: 20px;
 color: white;
@@ -68,10 +61,12 @@ function Home() {
               <p className="event-info2">NAVI MUMBAI'S BIGGEST MARATHON FOR CHARITY</p>
             </div>
             <div className="buttons">
-              <div className="buttonc1">
-                <a href="/udaan"><button>More Details</button></a>
+              <div className="buttonh">
+                <a href="/udaan">
+                  <button>More Details</button>
+                </a>
               </div>
-              <div className="buttonc2">
+              <div className="buttonh">
                 <a href="https://www.townscript.com/v2/e/udaan-2024-314013/booking/tickets">
                   <button>Register Now</button>
                 </a>
@@ -85,14 +80,14 @@ function Home() {
       <div>
         <div style={{
           backgroundColor: "#000000",
-          padding: 70,
+          padding: 60,
         }}>
           <div className='homesection'>
             <div>
               <div style={{
                 fontFamily: "Roboto-Slab"
               }}>
-                <H1>SocialWing</H1> 
+                <H1>Social Wing</H1> 
               </div>
               <H2>"Alone we can do so little; <br/>together we can do so much." <br/>
               - Helen Keller        
@@ -111,7 +106,7 @@ function Home() {
           </div>
             
           <div>
-            <a href="http://docs.google.com/forms/d/e/1FAIpQLSccEKLUw_06re-iwR_pZ5yNiCV4aHxzh-rqDUrP-m1RC7lQTw/viewform" target="_blank">
+            <a href="http://docs.google.com/forms/d/e/1FAIpQLSccEKLUw_06re-iwR_pZ5yNiCV4aHxzh-rqDUrP-m1RC7lQTw/viewform" target="_blank" rel="noreferrer">
               <div style={{
                 display: "flex",
                 alignItems: "center",

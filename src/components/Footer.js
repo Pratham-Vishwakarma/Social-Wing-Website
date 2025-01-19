@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import IMG16 from "../Images/teams/whitesocialwing.png";
+import IMG16 from "../Images/Assets/whitesowlogo.png";
 import "../Styles/Footer.css"; // Custom styles for the footer
 import IMG1 from "../Images/Assets/insta.png";
 import IMG2 from "../Images/Assets/facebook.png";
@@ -11,23 +11,25 @@ export default function Footer() {
     <footer id="footer" className="footer">
       <div className="footer-top">
         <div className="container">
-          <ul className="footer-nav">
-            <li className="footer-nav-item">
-              <Link to="/" className="footer-nav-link">Home</Link>
-            </li>
-            <li className="footer-nav-item">
-              <Link to="/events" className="footer-nav-link">Events</Link>
-            </li>
-            <li className="footer-nav-item">
-              <Link to="/team" className="footer-nav-link">Team</Link>
-            </li>
-            <li className="footer-nav-item">
-              <Link to="/nss" className="footer-nav-link">NSS</Link>
-            </li>
-            <li className="footer-nav-item">
-              <Link to="/gallery" className="footer-nav-link">Gallery</Link>
-            </li>
-          </ul>
+          <div className="container-nav">
+            <ul className="footer-nav">
+              <li className="footer-nav-item">
+                <Link to="/" className="footer-nav-link">Home</Link>
+              </li>
+              <li className="footer-nav-item">
+                <Link to="/events" className="footer-nav-link">Events</Link>
+              </li>
+              <li className="footer-nav-item">
+                <Link to="/team" className="footer-nav-link">Team</Link>
+              </li>
+              <li className="footer-nav-item">
+                <Link to="/nss" className="footer-nav-link">NSS</Link>
+              </li>
+              <li className="footer-nav-item">
+                <Link to="/gallery" className="footer-nav-link">Gallery</Link>
+              </li>
+            </ul>
+          </div>
 
           <div className="row justify-content-center">
             <div className="col-lg-6">

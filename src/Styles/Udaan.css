@@ -1,7 +1,3 @@
-/* Import Inter font */
-/* Import Lato font */
-/* Import League Spartan font */
-/* Import Poppins font */
 @import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
@@ -15,11 +11,10 @@ padding: 120px 0 30px;
 }
 
 #jumbotron-div {
-display: flex;
-flex-direction: row;
-justify-content: space-evenly;
-align-items: center;
-padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .logos-area-left,
@@ -90,58 +85,11 @@ transition: background-color 0.3s ease;
 background-color: #c4401c;
 }
 
-@media (max-width: 768px) {
-    #jumbotron-div {
-        flex-direction: column; /* Stacks all items */
-    }
-
-    .logos-area-left,
-    .logos-area-right {
-        flex: 1 1 100%; /* Take full width when stacked */
-    }
-
-    .jumbotron-text h1 {
-        font-size: 2rem;
-    }
-
-    .jumbotron-text .highlight {
-        font-size: 1rem;
-    }
-
-    #udaan-logo {
-        max-width: 200px;
-        margin-bottom: 20px;
-    }
-
-    #social-wing-logo {
-        display: none;
-    }
-}
-  
-@media (max-width: 480px) {
-    #udaan-logo {
-        width: 200px;
-        }
-
-    .jumbotron-text h1 {
-        font-size: 1.8rem;
-    }
-
-    .jumbotron-text .highlight {
-        font-size: 0.9rem;
-    }
-
-    .buttonc button {
-        font-size: 0.9rem;
-        padding: 8px 16px;
-    }
-}
-
 /*Countdown Styles*/
 #countdown-div { /* Countdown Container */
 height: auto;
 padding: 40px 20px;
-background: linear-gradient(135deg, #FFA500, #FFB833);
+background: linear-gradient(135deg, #c88200, #b07300);
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -182,8 +130,8 @@ display: flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-background: rgba(255, 255, 255, 0.1);
-border: 2px solid rgba(255, 255, 255, 0.3);
+background: rgba(255, 228, 175, 0.1);
+border: 2px solid rgba(113, 82, 18, 0.3);
 border-radius: 15px;
 padding: 20px;
 width: 100px;
@@ -208,50 +156,6 @@ font-size: 1rem;
 font-weight: 500;
 margin-top: 10px;
 opacity: 0.9;
-}
-
-@media (max-width: 768px) { /* Responsive Design */
-    #countdown-div {
-        gap: 20px;
-        padding: 20px;
-    }
-
-    .countdown-timer-box {
-        width: 80px;
-        height: 100px;
-    }
-
-    .timer-value {
-        font-size: 2rem;
-    }
-
-    .timer-label {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 480px) {
-    .countdown-text .event-title {
-        font-size: 1.5rem;
-    }
-
-    .countdown-text #udaan_date {
-        font-size: 1rem;
-    }
-
-    .countdown-timer-box {
-        width: 70px;
-        height: 90px;
-        padding: 15px;
-    }
-
-    .timer-value {
-        font-size: 1.8rem;
-    }
-
-    .timer-label {
-        font-size: 0.8rem;
-    }
 }
 
 /*About Udaan Styles*/
@@ -322,45 +226,9 @@ transform: scale(1.05);
 box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
-/* Responsive Design
-@media (max-width: 1024px) {
-    .section {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .about-left-side {
-        flex: 1 1 100%;
-    }
-
-    .about-right-side {
-        flex: 1 1 100%;
-        margin-top: 20px;
-    }
-} */
-
-@media (max-width: 768px) {
-    .section-title {
-        font-size: 2.4rem;
-    }
-
-    .udaan-info {
-        font-size: 1.1rem;
-    }
-
-    .deliverables-list {
-        font-size: 1rem;
-    }
-}
-
 /*Body Style*/
 *{
     font-family: "Poppins", sans-serif !important;
-}
-
-/* Prevent horizontal scrolling */
-html, body {
-    overflow-x: hidden;
 }
   
 html{
@@ -374,4 +242,110 @@ a{
 
 a:visited{
     color: inherit;
+}
+
+/*Media Responsive*/
+@media (max-width: 768px){
+    #jumbotron-div {
+        flex-direction: column; /* Stacks all items */
+        padding-left: none;
+    }
+
+    .logos-area-left,
+    .logos-area-right {
+        flex: 1 1 100%; /* Take full width when stacked */
+    }
+
+    .jumbotron-text {
+        padding: 9px;
+    }
+
+    .jumbotron-text h1 {
+        font-size: 2rem;
+    }
+
+    .jumbotron-text .highlight {
+        font-size: 2rem;
+        padding: 5px;
+    }
+
+    #udaan-logo {
+        max-width: 200px;
+        margin-bottom: 20px;
+    }
+
+    #social-wing-logo {
+        display: none;
+    }
+
+    #countdown-div {
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .countdown-timer-box {
+        width: 80px;
+        height: 100px;
+    }
+
+    .timer-value {
+        font-size: 2rem;
+    }
+
+    .timer-label {
+        font-size: 0.9rem;
+    }
+    
+    .section-title {
+        font-size: 2.4rem;
+    }
+
+    .udaan-info {
+        font-size: 1.1rem;
+    }
+
+    .deliverables-list {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    #udaan-logo {
+        width: 200px;
+        }
+
+    .jumbotron-text h1 {
+        font-size: 1.8rem;
+    }
+
+    .jumbotron-text .highlight {
+        font-size: 1rem;
+    }
+
+    .buttonc button {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+    
+    .countdown-text .event-title {
+        font-size: 1.5rem;
+    }
+
+    .countdown-text #udaan_date {
+        font-size: 1rem;
+    }
+
+    .countdown-timer-box {
+        width: 70px;
+        height: 90px;
+        padding: 15px;
+    }
+
+    .timer-value {
+        font-size: 1.8rem;
+    }
+
+    .timer-label {
+        font-size: 0.8rem;
+    }
 }

@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import '../Styles/Udaan.css';
 import Img1 from '../Images/udaan/udaanlogo.png';
-import Img2 from '../Images/udaan/white wing.png';
+import Img2 from "../Images/Assets/whitesowlogo.png";
 import Card from "../components/Card";
 
 const Udaan = () => {
@@ -21,19 +21,19 @@ const Udaan = () => {
       var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
       var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
       var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
+  
       // Check if the component is still mounted
-      if(document.getElementById("days")) {
+      if (document.getElementById("days")) {
         document.getElementById("days").innerHTML = days.toString();
         document.getElementById("hours").innerHTML = hours.toString();
         document.getElementById("minutes").innerHTML = minutes.toString();
         document.getElementById("seconds").innerHTML = seconds.toString();
       }
-
+  
       if (distance < 0) {
         clearInterval(x);
         // Check if the component is still mounted
-        if(document.getElementById("days")) {
+        if (document.getElementById("days")) {
           document.getElementById("days").innerHTML = "00";
           document.getElementById("hours").innerHTML = "00";
           document.getElementById("minutes").innerHTML = "00";
@@ -41,10 +41,11 @@ const Udaan = () => {
         }
       }
     }, 1000);
-
+  
     // Cleanup function to clear the interval when the component is unmounted
     return () => clearInterval(x);
-  }, []); // Empty dependency array ensures the effect runs only once on mount
+  }, [countDownDate]); // Add countDownDate here
+  
 
   return (
     <>
