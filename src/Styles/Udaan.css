@@ -69,7 +69,7 @@ margin-top: 20px;
 }
 
 .buttonc button {
-background-color: #ff5733;
+background-color: #F4A906;
 color: white;
 font-size: 1rem;
 font-weight: bold;
@@ -88,7 +88,7 @@ background-color: #c4401c;
 #countdown-div { /* Countdown Container */
 height: auto;
 padding: 40px 20px;
-background: linear-gradient(135deg, #c88200, #b07300);
+background: linear-gradient(135deg, #F4A906, #b07300);
 display: flex;
 flex-wrap: wrap;
 justify-content: center;
@@ -223,6 +223,27 @@ transition: transform 0.3s ease, box-shadow 0.3s ease;
 .about-right-side img:hover {
 transform: scale(1.05);
 box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+/*About Right Side Girl*/
+.about-right-side-girl {
+    flex: 1 1 35%;
+    display: flex;
+    justify-content: center;
+}
+    
+.about-right-side-girl img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-right-side-girl img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
 /*Body Style*/

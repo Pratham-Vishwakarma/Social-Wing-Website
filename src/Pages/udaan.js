@@ -3,6 +3,8 @@ import '../Styles/Udaan.css';
 import Img1 from '../Images/Assets/udaanlogo.png';
 import Img2 from "../Images/Assets/whitesowlogo.png";
 import Card from "../components/Card";
+import KID from "../Images/Udaan/kid sitting.jpg";
+import GIRL from "../Images/Udaan/img1.jpg";
 
 const Udaan = () => {
   useEffect(() => {
@@ -61,9 +63,9 @@ const Udaan = () => {
           </div>
           <div className="jumbotron-text">
             <h1 className="udaantext">UDAAN 2025</h1>
-            <p className="highlight">Largest Fundraising Marathon Of Navi Mumbai</p>
+            <p className="highlight">Largest Marathon Of Navi Mumbai</p>
             <div className="buttonc">
-              <a href="https://www.townscript.com/v2/e/udaan-2024-314013/booking/tickets">
+              <a href="https://www.townscript.com/e/udaan-2025-030014">
                 <button>Register Now</button>
               </a>
             </div>
@@ -107,33 +109,33 @@ const Udaan = () => {
       {/* About udaan div */}
       <div id="about-udaan" className="section odd">
         <div className="about-left-side">
-          <h3 className="section-title">About Udaan</h3>
+          <h3 className="section-title">About UDAAN</h3>
           <p className="udaan-info">
-            Udaan is Navi Mumbai's largest marathon for charity, organized by <b>Social Wing - RAIT</b>, 
-            which is a part of D.Y. Patil University, Nerul. Udaan is a 7 km marathon in Nerul around DY Patil University. 
+            UDAAN is Navi Mumbai's largest marathon for charity, organized by <b>Social Wing - RAIT</b>, 
+            which is a part of D.Y. Patil University, Nerul. UDAAN is a 7 km marathon in Nerul around DY Patil University. 
             It is recognized as one of the biggest marathons in Navi Mumbai, with an average footfall of over 6000 runners.
           </p>
         </div>
         <div className="about-right-side">
           <img
-            src="../Images/Udaan/IMG_1399.jpg"
+            src={KID}
             alt="Kid sitting Udaan"
           />
         </div>
       </div>
 
       <div id="about-udaan" className="section even">
-        <div className="about-right-side">
+        <div className="about-right-side-girl">
           <img
-            src="../Images/Udaan/IMG_1399.jpg"
+            src={GIRL}
             alt="Kid sitting Udaan"
           />
         </div>
         <div className="about-left-side">
-          <h3 className="section-title">Cause Of Udaan</h3>
+          <h3 className="section-title">Cause Of UDAAN</h3>
           <p className="udaan-info">
-            The main purpose of Udaan is to contribute towards the betterment of society. 
-            Udaan inspires thousands to help the underprivileged and bring about meaningful change in society.
+            The main purpose of UDAAN is to contribute towards the betterment of society. 
+            UDAAN inspires thousands to help the underprivileged and bring about meaningful change in society.
           </p>
         </div>
       </div>

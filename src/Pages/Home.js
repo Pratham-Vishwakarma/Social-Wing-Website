@@ -25,7 +25,7 @@ color: #e2e2e2;
 `
 
 const DefaultButton = styled.button`
-background-color: #cc8400;
+background-color: #F4A906;
 border: none;
 padding: 20px;
 color: white;
@@ -67,7 +67,7 @@ function Home() {
                 </a>
               </div>
               <div className="buttonh">
-                <a href="https://www.townscript.com/v2/e/udaan-2024-314013/booking/tickets">
+                <a href="https://www.townscript.com/e/udaan-2025-030014">
                   <button>Register Now</button>
                 </a>
               </div>
@@ -106,7 +106,7 @@ function Home() {
           </div>
             
           <div>
-            <a href="http://docs.google.com/forms/d/e/1FAIpQLSccEKLUw_06re-iwR_pZ5yNiCV4aHxzh-rqDUrP-m1RC7lQTw/viewform" target="_blank" rel="noreferrer">
+            <a href="https://forms.gle/LLSGVyUvuyWBsct56" target="_blank" rel="noreferrer">
               <div style={{
                 display: "flex",
                 alignItems: "center",

@@ -6,21 +6,21 @@ export const faculty = [
     {
         imgUrl: team01,
         name: 'Dr. Sharad P. Jadhav',
-        position1: 'Faculty Coordinator',
+        position1: 'Faculty Co-ordinator',
         position2: 'Social Wing RAIT',
     },
   
     {
         imgUrl: team02,
         name: 'Mr. Nitin Chavan',
-        position1: 'Program Officer',
+        position1: 'Programme Officer',
         position2: 'NSS RAIT'
     },
   
     {
         imgUrl: team03,
         name: 'Ms. Mansi Jawale',
-        position1: 'Program Officer',
+        position1: 'Programme Officer',
         position2: 'NSS RAIT'
     },    
   ]

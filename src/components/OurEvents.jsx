@@ -60,7 +60,7 @@ const OurEvents = (props) => {
             <img src={Img1} className="d-block mx-auto w-50 h-50" alt="..."/>
             <div className="container">
               <div className="carousel-caption">
-                <HH1>Udaan Marathon</HH1>    
+                <HH1>UDAAN Marathon</HH1>    
               </div>
             </div>
           </div>

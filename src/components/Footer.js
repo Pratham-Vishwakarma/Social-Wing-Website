@@ -41,7 +41,7 @@ export default function Footer() {
 
           <div className="social-links">
             <a
-              href="https://instagram.com/yourprofile"
+              href="https://instagram.com/sowrait?igshid=MzRlODBiNWFlZA=="
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon instagram"
@@ -49,7 +49,7 @@ export default function Footer() {
               <img height="40px" src={IMG1} alt="Instagram" />
             </a>
             <a
-              href="https://facebook.com/yourprofile"
+              href="https://www.facebook.com/sowrait/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon facebook"
@@ -57,7 +57,7 @@ export default function Footer() {
               <img height="40px" src={IMG2} alt="Facebook" />
             </a>
             <a
-              href="https://linkedin.com/yourprofile"
+              href="https://www.linkedin.com/company/socialwing-rait/"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon linkedin"
@@ -65,7 +65,7 @@ export default function Footer() {
               <img height="40px" src={IMG3} alt="LinkedIn" />
             </a>
             <a
-              href="https://twitter.com/yourprofile"
+              href="https://x.com/SocialWing_RAIT"
               target="_blank"
               rel="noopener noreferrer"
               className="social-icon twitter"

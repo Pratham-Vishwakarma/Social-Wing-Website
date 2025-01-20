@@ -52,7 +52,7 @@ const NSS = () => {
                     <br/>
                     <p>
                       Some of the prominent activities carried out by our NSS-RAIT unit in
-                      collaboration with SocialWing-RAIT are: Road Safety Awareness
+                      collaboration with Social Wing-RAIT are: Road Safety Awareness
                       Seminar, AIDS Awareness Campaign, Youth Week Celebration, National
                       Girl Child Day Celebration, Martyr's Day, Rashtriya Ekta Diwas
                       Celebration, Global Warming Awareness Campaign, Election Awareness

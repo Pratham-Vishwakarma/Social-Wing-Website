@@ -86,7 +86,7 @@ export default function NavBar() {
             <Link to="/gallery" onClick={closeMobileMenu}>Gallery</Link>
           </li>
           <li className="nav-link-item">
-            <Link to="/udaan" onClick={closeMobileMenu}>Udaan</Link>
+            <Link to="/udaan" onClick={closeMobileMenu}>UDAAN</Link>
           </li>
         </ul>
       </nav>

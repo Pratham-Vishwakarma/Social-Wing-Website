@@ -15,7 +15,6 @@ import team23 from '../Images/JCTeam/LOGISTICS HEADS/harsh logi single.jpg'
 import team24 from '../Images/JCTeam/LOGISTICS HEADS/IMG_7987.jpg'
 import team25 from '../Images/JCTeam/LOGISTICS HEADS/IMG_8020.jpg'
 import team26 from '../Images/JCTeam/LOGISTICS HEADS/IMG_8159.jpg'
-import team27 from '../Images/JCTeam/DESIGN HEADS/IMG_8101.jpg'
 import team28 from '../Images/JCTeam/DESIGN HEADS/IMG_8108.jpg'
 import team29 from '../Images/JCTeam/DESIGN HEADS/IMG_8118.jpg'
 import team30 from '../Images/JCTeam/DESIGN HEADS/IMG_8172.jpg'
@@ -28,7 +27,6 @@ import team36 from '../Images/JCTeam/CREATIVE HEADS/IMG_7999.jpg'
 import team37 from '../Images/JCTeam/CREATIVE HEADS/IMG_8026.jpg'
 import team38 from '../Images/JCTeam/DATABASE HEADS/IMG_7957.jpg'
 import team39 from '../Images/JCTeam/DATABASE HEADS/IMG_7967.jpg'
-import team40 from '../Images/JCTeam/SPONSORSHIP HEADS/IMG_8201.jpg'
 import team41 from '../Images/JCTeam/SPONSORSHIP HEADS/IMG_8209.jpg'
 
 export const jointCore = [
@@ -36,12 +34,17 @@ export const jointCore = [
         imgUrl: team10,
         name: 'Nikhil Goswami',
         position1: 'Event Co-ordinator',
+        linkedin: 'https://www.linkedin.com/in/nikhil-goswami-a12183253?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        instagram: 'https://www.instagram.com/_nikhi17_?igsh=MXIzeHYxZ2t4ZjM1dw==',
+        facebook: 'https://www.facebook.com/share/1FhiSsv7KR/',
     },
   
     {
         imgUrl: team11,
         name: 'Vikas Sharma',
         position1: 'Event Co-ordinator',
+        linkedin: 'https://www.linkedin.com/in/vikash-sharma-5b7160289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+        instagram: 'https://www.instagram.com/vikashrma?igsh=b2M1aGY2ZzZ1MHg0&utm_source=qr',
     },
   
     {
@@ -56,12 +59,14 @@ export const jointCore = [
         imgUrl: team13,
         name: 'Sharv Gawade',
         position1: 'Marketing Head',
+        instagram: 'https://instagram.com/_sharv_17',
     },
 
     {
         imgUrl: team14,
         name: 'Akshara Sabde',
         position1: 'Marketing Head',
+        instagram: 'https://www.instagram.com/iaksharasabde?igsh=ZTN2bm01eGd0dzBj&utm_source=qr',
     },
   
     {
@@ -81,12 +86,16 @@ export const jointCore = [
         imgUrl: team17,
         name: 'Juilee Shet',
         position1: 'Public Relations Officer',
+        linkedin: 'https://www.linkedin.com/in/juilee-shet-b73920284?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        twitter: 'https://x.com/JuileeShet?t=SXWNzcFi8WK8i-beKV262A&s=09',
+        instagram: 'https://www.instagram.com/juileeeshet?igsh=MzlhMjNxMzdnOGxi',
     },
   
     {
         imgUrl: team18,
         name: 'Heramb Kondilkar',
         position1: 'Digital Marketing Head',
+        instagram: 'https://www.instagram.com/herambkondilkar?igsh=NXBreWxrNnY1d3Z2',
     },
     
     {
@@ -101,7 +110,7 @@ export const jointCore = [
 
     {
         imgUrl: team20,
-        name: 'Riya Kishor Salunkhe',
+        name: 'Riya Salunkhe',
         position1: 'Digital Marketing Head',
         linkedin: 'https://www.linkedin.com/in/riya-salunkhe-763864321?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
         instagram: 'https://www.instagram.com/riyasalunkhe.26?igsh=Y3Vlc3dsNmUwZzl3',
@@ -112,12 +121,15 @@ export const jointCore = [
         imgUrl: team21,
         name: 'Swara Mahadik',
         position1: 'Orphanage Coordinator',
+        instagram: 'https://www.instagram.com/swara_mahadik07',
     },
     
     {
         imgUrl: team22,
-        name: 'I Don\'t Know',
+        name: 'Nehal Jariwala',
         position1: 'Orphanage Coordinator',
+        linkedin: 'https://www.linkedin.com/in/nehal-jariwala-1b0870257',
+        instagram: 'https://www.instagram.com/Nehal.jariwala',
     },
   
     {
@@ -132,24 +144,25 @@ export const jointCore = [
         imgUrl: team24,
         name: 'Rugved Khedaskar',
         position1: 'Logistics Head',
+        linkedin: 'https://in.linkedin.com/in/rugved-khedaskar-232082254',
+        instagram: 'https://x.com/Rugved1809?t=exwA7DOwrGtOJbSxSRkhJg&s=09',
+        twitter: 'https://x.com/Rugved1809?t=exwA7DOwrGtOJbSxSRkhJg&s=09',
     },
 
     {
         imgUrl: team25,
-        name: 'Sahil Naikwade',
+        name: 'Viraj Muzumdar',
         position1: 'Logistics Head',
+        linkedin: 'https://www.linkedin.com/in/viraj-muzumdar-1b520424b?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+        instagram: 'https://instagram.com/virraajjjj_21',
     },
     
     {
         imgUrl: team26,
-        name: 'Viraj Muzumdar',
+        name: 'Sahil Naikwade',
         position1: 'Logistics Head',
-    },
-  
-    {
-        imgUrl: team27,
-        name: 'I Don\'t Know',
-        position1: 'Design Head',
+        linkedin: 'https://www.linkedin.com/in/sahil-naikwade-779a90283?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+        instagram: 'https://www.instagram.com/sahillnaikwade?igsh=MWJydGVkeXQ2a25yNw%3D%3D&utm_source=qr',
     },
 
     {
@@ -162,8 +175,9 @@ export const jointCore = [
     
     {
         imgUrl: team29,
-        name: 'I Don\'t Know',
+        name: 'Pranav Khairnar',
         position1: 'Design Head',
+        instagram: 'https://www.instagram.com/pranav_1645?igsh=Nmwwcm9rcDRmNWI1',
     },
   
     {
@@ -182,26 +196,34 @@ export const jointCore = [
 
     {
         imgUrl: team32,
-        name: 'I Don\'t Know',
+        name: 'Anushka Purohit',
         position1: 'Editor In Chief',
+        linkedin: 'https://www.linkedin.com/in/anushka-p-61643b24b/',
+        instagram: 'https://www.instagram.com/anushkapurohit_?igsh=MWFkcHhxMml3cHprdA%3D%3D&utm_source=qr'
     },
     
     {
         imgUrl: team33,
         name: 'Aashka Gupta',
         position1: 'Chief Technical Officer',
+        linkedin: 'http://www.linkedin.com/in/aashkagupta02',
+        instagram: 'https://instagram.com/_aashka_gupta_',
     },
 
     {
         imgUrl: team34,
         name: 'Pratham Vishwakarma',
         position1: 'Chief Technical Officer',
+        linkedin: 'https://www.linkedin.com/in/pratham-vishwakarma/',
+        twitter: 'https://x.com/pratham1826',
     },
 
     {
         imgUrl: team35,
         name: 'Manali Padalkar',
         position1: 'Creative Head',
+        linkedin: 'https://www.linkedin.com/in/manali-padalkar-1a00862a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
+        instagram: 'https://www.instagram.com/manali_fr?igsh=MW84ejdzZ3pyZDVwbw%3D%3D&utm_source=qr',
     },
 
     {
@@ -215,6 +237,7 @@ export const jointCore = [
         imgUrl: team37,
         name: 'Ashlesha Gaikwad',
         position1: 'Creative Head',
+        instagram: 'https://instagram.com/ash_lexha',
     },
 
     {
@@ -229,18 +252,15 @@ export const jointCore = [
         imgUrl: team39,
         name: 'Sujal Lal',
         position1: 'Database Head',
-    },
-
-    {
-        imgUrl: team40,
-        name: 'I Don\'t Know',
-        position1: 'Sponsership Head',
+        twitter: 'https://x.com/lal_sujal?s=21',
+        instagram: 'https://www.instagram.com/sujal_404_?igsh=NW4wM3k5M2toazRr&utm_source=qr',
     },
 
     {
         imgUrl: team41,
-        name: 'Lamiya',
+        name: 'Lamiya Chasmawala',
         position1: 'Sponsership Head',
+        instagram: 'https://www.instagram.com/lamiyaaa.aa?igsh=MWhzZHRxN2Nrb3E1Mg==',
     },
 
   ]

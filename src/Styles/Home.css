@@ -12,7 +12,7 @@
 #event-stats-div { /* Stats Container */
   height: auto;
   padding: 40px 10px;
-  background: linear-gradient(135deg, #c88200, #b07300);
+  background: linear-gradient(135deg, #F4A906, #b07300);
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
