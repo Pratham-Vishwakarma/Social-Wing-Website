@@ -73,6 +73,8 @@ export const jointCore = [
         imgUrl: team15,
         name: 'Devika Sandanshiv',
         position1: 'Marketing Head',
+        linkedin: 'http://linkedin.com/in/devika-sandanshiv-ab402028b',
+        instagram: 'https://instagram.com/devikasandanshiv',
     },
     
     {
