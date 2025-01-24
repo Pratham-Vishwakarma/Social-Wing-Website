@@ -139,6 +139,7 @@
       text-align: center;  /* Ensures text inside the items is also centered */
       padding: 0;
       list-style-type: none;
+      border-bottom: none;
     }
 
     .container-nav {
