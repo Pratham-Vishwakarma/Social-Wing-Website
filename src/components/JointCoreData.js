@@ -261,7 +261,7 @@ export const jointCore = [
     {
         imgUrl: team41,
         name: 'Lamiya Chasmawala',
-        position1: 'Sponsership Head',
+        position1: 'Sponsorship Head',
         instagram: 'https://www.instagram.com/lamiyaaa.aa?igsh=MWhzZHRxN2Nrb3E1Mg==',
     },
 
