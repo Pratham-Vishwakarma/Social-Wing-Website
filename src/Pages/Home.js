@@ -67,7 +67,7 @@ function Home() {
                 </a>
               </div>
               <div className="buttonh">
-                <a href="https://www.townscript.com/e/udaan-2025-030014">
+                <a href="https://www.townscript.com/v2/e/udaan-2025-030014/booking/tickets">
                   <button>Register Now</button>
                 </a>
               </div>

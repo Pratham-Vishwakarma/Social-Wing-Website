@@ -65,7 +65,7 @@ const Udaan = () => {
             <h1 className="udaantext">UDAAN 2025</h1>
             <p className="highlight">Largest Marathon Of Navi Mumbai</p>
             <div className="buttonc">
-              <a href="https://www.townscript.com/e/udaan-2025-030014">
+              <a href="https://www.townscript.com/v2/e/udaan-2025-030014/booking/tickets">
                 <button>Register Now</button>
               </a>
             </div>
