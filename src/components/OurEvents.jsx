@@ -6,6 +6,7 @@ import Img2 from '../Images/Events/1tp.JPG';
 import Img3 from '../Images/Events/1 Donation Drive.jpg';
 import Img4 from '../Images/Events/1 cleanup drive.jpg';
 import Img5 from '../Images/Events/1orphanage.jpg';
+import '../Styles/OurEvents.css';
 
 const H1 = styled.h1`
 text-align: center;
@@ -112,7 +113,7 @@ const OurEvents = (props) => {
       </div>
       <ButtonContainer>
         <p>
-          <Link to="/events" className="btn btn-lg btn-primary mt-3">
+          <Link to="/events" className="btn btn-lg know-btn mt-3">
             Know More
           </Link>
         </p>

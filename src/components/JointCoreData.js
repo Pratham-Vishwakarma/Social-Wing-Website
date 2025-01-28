@@ -262,6 +262,7 @@ export const jointCore = [
         imgUrl: team41,
         name: 'Lamiya Chasmawala',
         position1: 'Sponsorship Head',
+        linkedin: 'https://www.linkedin.com/in/lamiya-chasmawala-203677349/',
         instagram: 'https://www.instagram.com/lamiyaaa.aa?igsh=MWhzZHRxN2Nrb3E1Mg==',
     },
 

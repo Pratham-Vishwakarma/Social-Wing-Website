@@ -84,6 +84,37 @@ transition: background-color 0.3s ease;
 background-color: #c4401c;
 }
 
+/* Registered Participants */
+.registered-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-left: 30px;
+    border-left: 2px solid rgba(255, 218, 139, 0.7);
+  }
+  
+  .registered-count:hover {
+    transform: scale(1.1);
+  }
+  
+  .registered-count {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(255, 228, 175, 0.1);
+    border: 2px solid rgba(82, 56, 5, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease;
+    padding: 10px 20px; 
+    border-radius: 15px;
+  }
+
+  .registered-area h2 {
+    margin-bottom: 0px;
+    font-weight: bold;
+  }
+  
 /*Countdown Styles*/
 #countdown-div { /* Countdown Container */
 height: auto;
@@ -266,6 +297,19 @@ a:visited{
 
 /*Media Responsive*/
 @media (max-width: 768px){
+    .registered-area {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding-left: 5px;
+        padding-right: 5px;
+        padding-top: 15px;
+        border-left: none;
+        border-top: 2px solid rgba(255, 218, 139, 0.7);
+    }
+
     #jumbotron-div {
         flex-direction: column; /* Stacks all items */
         padding-left: none;

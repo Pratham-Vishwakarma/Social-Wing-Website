@@ -32,7 +32,6 @@ const NSS = () => {
               <div className="sides">
                 <div className="wrapper-sides1x">
                   <h2 className="text-2xl font-semibold text-white dark:text-gray-800">About NSS-RAIT</h2>
-                  <br/>
                   <p>
                     The first NSS-RAIT unit was established in 2019 with the intent to
                     connect with the nationwide NSS community of social workers.
@@ -48,8 +47,7 @@ const NSS = () => {
               <div className="sides sidesr">
                 <div className="wrapper-bottom">
                   <div className="wrapper-sides1x">
-                    <h2 className="text-2xl font-semibold text-white dark:text-gray-800">What we do</h2>
-                    <br/>
+                    <h2 className="text-2xl font-semibold text-white dark:text-gray-800 mt-5">What we do</h2>
                     <p>
                       Some of the prominent activities carried out by our NSS-RAIT unit in
                       collaboration with Social Wing-RAIT are: Road Safety Awareness

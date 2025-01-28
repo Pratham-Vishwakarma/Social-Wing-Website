@@ -1,4 +1,5 @@
 import React, {useEffect} from 'react';
+import { useNavigate } from 'react-router-dom';
 import '../Styles/Rules.css';
 import styled from 'styled-components';
 
@@ -23,14 +24,19 @@ const H3 = styled.h3`
   margin-left: 20px;
 `;
 
-const Rules = () => {
+const Rules = () => {  
+  const navigate = useNavigate();
+
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top-left corner
   }, []); // Empty dependency array ensures it runs only on component mount
 
   return (
     <div className='rules'>
-        <H1 className='title'>Rules and Regulations</H1>
+        <H1 className='title'>
+          <button onClick={() => navigate(-1)} className="custom-back-btn mb-3">Back</button>
+          Rules and Regulations
+        </H1>
         <div className='container-rules1'>
             <div className='rules1'>
                 <div className='sent-rules'>

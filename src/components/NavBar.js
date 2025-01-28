@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import "../Styles/Navbar.css";
 import IMG16 from "../Images/Assets/whitesowlogo.png";
 import IMG17 from "../Images/Assets/black dy.png";
@@ -68,26 +68,26 @@ export default function NavBar() {
           )}
         </button>
 
-        {/* Desktop Links */}
+        {/* Navigation Links */}
         <ul className={`nav-links ${isMobileMenuOpen ? "mobile-menu-open" : ""}`}>
-          <li className="nav-link-item">
-            <Link to="/" onClick={closeMobileMenu}>Home</Link>
-          </li>
-          <li className="nav-link-item">
-            <Link to="/events" onClick={closeMobileMenu}>Events</Link>
-          </li>
-          <li className="nav-link-item">
-            <Link to="/team" onClick={closeMobileMenu}>Team</Link>
-          </li>
-          <li className="nav-link-item">
-            <Link to="/nss" onClick={closeMobileMenu}>NSS</Link>
-          </li>
-          <li className="nav-link-item">
-            <Link to="/gallery" onClick={closeMobileMenu}>Gallery</Link>
-          </li>
-          <li className="nav-link-item">
-            <Link to="/udaan" onClick={closeMobileMenu}>UDAAN</Link>
-          </li>
+          {[
+            { name: "Home", path: "/" },
+            { name: "Events", path: "/events" },
+            { name: "Team", path: "/team" },
+            { name: "NSS", path: "/nss" },
+            { name: "Gallery", path: "/gallery" },
+            { name: "UDAAN", path: "/udaan" },
+          ].map((link) => (
+            <li key={link.path} className="nav-link-item">
+              <NavLink
+                to={link.path}
+                onClick={closeMobileMenu}
+                className={({ isActive }) => (isActive ? "active-link" : "")}
+              >
+                {link.name}
+              </NavLink>
+            </li>
+          ))}
         </ul>
       </nav>
     </div>

@@ -5,6 +5,7 @@ import IMG1 from "../Images/Assets/insta.png";
 import IMG2 from "../Images/Assets/facebook.png";
 import IMG3 from "../Images/Assets/linkedin.png";
 import IMG4 from "../Images/Assets/x.png";
+import IMG5 from "../Images/Assets/youtube.png";
 
 export default function Footer() {
   return (
@@ -71,6 +72,14 @@ export default function Footer() {
               className="social-icon twitter"
             >
               <img height="45px" src={IMG4} alt="Twitter" />
+            </a>
+            <a
+              href="https://youtube.com/@socialwingrait9920"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="social-icon twitter"
+            >
+              <img height="45px" src={IMG5} alt="Youtube" />
             </a>
           </div>
 

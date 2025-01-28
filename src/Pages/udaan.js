@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import '../Styles/Udaan.css';
 import Img1 from '../Images/Assets/udaanlogo.png';
 import Img2 from "../Images/Assets/whitesowlogo.png";
@@ -7,59 +7,75 @@ import KID from "../Images/Udaan/kid sitting.jpg";
 import GIRL from "../Images/Udaan/img1.jpg";
 
 const Udaan = () => {
+  const [registeredCount, setRegisteredCount] = useState(() => {
+    const storedValue = localStorage.getItem("registeredCount");
+    const initialValue = storedValue ? Math.min(Number(storedValue), 3000) : 900;  // Ensure we check for valid value
+    return initialValue;
+  });
+  const [countdown, setCountdown] = useState({
+    days: "00",
+    hours: "00",
+    minutes: "00",
+    seconds: "00",
+  });
+
+  // Countdown Timer Logic
+  const countDownDate = new Date("Feb 9, 2025 00:00:00").getTime();
+
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top-left corner
-  }, []); // Empty dependency array ensures it runs only on component mount
-
-  // Countdown Script
-  var countDownDate = new Date("Feb 9, 2025 00:00:00").getTime();
+  }, []);
 
   useEffect(() => {
-    // Update the count down every 1 second
-    let x = setInterval(function () {
-      var now = new Date().getTime();
-      var distance = countDownDate - now;
-      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-      var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-      var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-  
-      // Check if the component is still mounted
-      if (document.getElementById("days")) {
-        document.getElementById("days").innerHTML = days.toString();
-        document.getElementById("hours").innerHTML = hours.toString();
-        document.getElementById("minutes").innerHTML = minutes.toString();
-        document.getElementById("seconds").innerHTML = seconds.toString();
-      }
-  
+    const interval = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = countDownDate - now;
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
       if (distance < 0) {
-        clearInterval(x);
-        // Check if the component is still mounted
-        if (document.getElementById("days")) {
-          document.getElementById("days").innerHTML = "00";
-          document.getElementById("hours").innerHTML = "00";
-          document.getElementById("minutes").innerHTML = "00";
-          document.getElementById("seconds").innerHTML = "00";
-        }
+        clearInterval(interval);
+        setCountdown({
+          days: "00",
+          hours: "00",
+          minutes: "00",
+          seconds: "00",
+        });
+      } else {
+        setCountdown({
+          days: days.toString().padStart(2, "0"),
+          hours: hours.toString().padStart(2, "0"),
+          minutes: minutes.toString().padStart(2, "0"),
+          seconds: seconds.toString().padStart(2, "0"),
+        });
       }
     }, 1000);
+
+    return () => clearInterval(interval);
+  }, [countDownDate]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      const increment = Math.floor(Math.random() * 11) + 1; // Random between 0 and 10
   
-    // Cleanup function to clear the interval when the component is unmounted
-    return () => clearInterval(x);
-  }, [countDownDate]); // Add countDownDate here
+      setRegisteredCount((prevCount) => {
+        const newCount = Math.min(prevCount + increment, 3000); // Limit to 3000
+        localStorage.setItem("registeredCount", newCount);
+        return newCount;
+      });
+    }, 1800000); // Update every 30 minutes
   
+    return () => clearInterval(interval);
+  }, []);
 
   return (
     <>
       <div className="udaan-hero">
         <div id="jumbotron-div">
           <div className="logos-area-left">
-            {/* Add Udaan's logo here */}
-            <img
-              src={Img1}
-              alt="Udaan Logo"
-              id="udaan-logo"
-            />
+            <img src={Img1} alt="Udaan Logo" id="udaan-logo" />
           </div>
           <div className="jumbotron-text">
             <h1 className="udaantext">UDAAN 2025</h1>
@@ -71,16 +87,15 @@ const Udaan = () => {
             </div>
           </div>
           <div className="logos-area-right">
-            <img
-              src={Img2} 
-              alt="Social Wing Logo"
-              id="social-wing-logo"
-            />
+            <img src={Img2} alt="Social Wing Logo" id="social-wing-logo" />
           </div>
         </div>
       </div>
-    
-      {/* Countdown Div */}
+
+      {/* Total Participants (Runners + Donors) */}
+      
+
+      {/* Countdown Section */}
       <div id="countdown-div">
         <div className="countdown-text">
           <h4 className="event-title">UDAAN 2025</h4>
@@ -88,54 +103,54 @@ const Udaan = () => {
         </div>
         <div className="countdown-timer">
           <div className="countdown-timer-box">
-            <h1 id="days" className="timer-value">00</h1>
+            <h1 id="days" className="timer-value">{countdown.days}</h1>
             <h4 className="timer-label">Days</h4>
           </div>
           <div className="countdown-timer-box">
-            <h1 id="hours" className="timer-value">00</h1>
+            <h1 id="hours" className="timer-value">{countdown.hours}</h1>
             <h4 className="timer-label">Hours</h4>
           </div>
           <div className="countdown-timer-box">
-            <h1 id="minutes" className="timer-value">00</h1>
+            <h1 id="minutes" className="timer-value">{countdown.minutes}</h1>
             <h4 className="timer-label">Minutes</h4>
           </div>
           <div className="countdown-timer-box">
-            <h1 id="seconds" className="timer-value">00</h1>
+            <h1 id="seconds" className="timer-value">{countdown.seconds}</h1>
             <h4 className="timer-label">Seconds</h4>
           </div>
         </div>
+        <div className="registered-area">
+            <h3>Total Participants:</h3>
+            <div className="registered-count">
+              <h2>{registeredCount}+ </h2>
+            </div>
+        </div>
       </div>
 
-      {/* About udaan div */}
+      {/* About Udaan Section */}
       <div id="about-udaan" className="section odd">
         <div className="about-left-side">
           <h3 className="section-title">About UDAAN</h3>
           <p className="udaan-info">
-            UDAAN is Navi Mumbai's largest marathon for charity, organized by <b>Social Wing - RAIT</b>, 
-            which is a part of D.Y. Patil University, Nerul. UDAAN is a 7 km marathon in Nerul around DY Patil University. 
+            UDAAN is Navi Mumbai's largest marathon for charity, organized by <b>Social Wing - RAIT</b>,
+            which is a part of D.Y. Patil University, Nerul. UDAAN is a 7 km marathon in Nerul around DY Patil University.
             It is recognized as one of the biggest marathons in Navi Mumbai, with an average footfall of over 6000 runners.
           </p>
         </div>
         <div className="about-right-side">
-          <img
-            src={KID}
-            alt="Kid sitting Udaan"
-          />
+          <img src={KID} alt="Kid sitting Udaan" />
         </div>
       </div>
 
       <div id="about-udaan" className="section even">
         <div className="about-right-side-girl">
-          <img
-            src={GIRL}
-            alt="Kid sitting Udaan"
-          />
+          <img src={GIRL} alt="Girl Udaan" />
         </div>
         <div className="about-left-side">
           <h3 className="section-title">Cause Of UDAAN</h3>
           <p className="udaan-info">
-            The main purpose of UDAAN is to contribute towards the betterment of society. 
-            UDAAN inspires thousands to help the underprivileged and bring about meaningful change in society.
+            The main purpose of UDAAN is to contribute towards the betterment of society. UDAAN inspires thousands to
+            help the underprivileged and bring about meaningful change in society.
           </p>
         </div>
       </div>
@@ -154,8 +169,8 @@ const Udaan = () => {
           </ul>
         </div>
       </div>
-    
-      <Card/>  
+
+      <Card />
     </>
   );
 };

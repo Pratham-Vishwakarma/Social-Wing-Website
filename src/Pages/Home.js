@@ -45,7 +45,7 @@ function Home() {
     <>
       {/* Udaan Banner */}
       <div className="container1">
-        <div className="event-details">
+        <div className="event-details-home">
           <div className="logo-column">
             <img 
               className="logo" 

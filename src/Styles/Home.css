@@ -61,7 +61,7 @@ body {
   background: url('../Images/Udaan/bgudaan.png');
 }
 
-.event-details {
+.event-details-home {
   display: flex;
   align-items: center;
   justify-content: center;

@@ -37,13 +37,13 @@ body {
 }
 
 .nss-jumbotron > p {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 600;
     color: #FFA500; /* Primary color for emphasis */
 }
 
 .nss-jumbotron > h1 {
-    font-size: 120px;
+    font-size: 100px;
     font-weight: bold;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: #ececec !important;
@@ -113,7 +113,7 @@ body {
     padding: 30px;
     border-radius: 50px;
     box-shadow: 15px 15px;
-    background: linear-gradient(90deg, #bc7b00, #815300) !important;
+    background: linear-gradient(45deg, #bc7b00, #FFA500) !important;
 }
 
 #trans-button-1 {
@@ -144,12 +144,6 @@ body {
 .wrapper-sides1x {
     padding: 30px;
     text-align: center;
-}
-
-h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #4a4a4a;
 }
 
 /* Media Queries */
@@ -190,6 +184,7 @@ h2 {
     }
 
     .wrapper-sides1x {
+        margin-top: 30px;
         padding: 40px 0;
         text-align: center;
         display: flex;

@@ -17,77 +17,62 @@ import Img15 from '../Images/Events/NSS.jpg';
 const EventsData = [
     {
         title:"DIWALI CELEBRATION",
-        date: "12-1-23",
         info: "Description",
         img: Img1
     },{
         title:"GANPATI CELEBRATION",
-        date: "2-1-23",
         info: "Description",
         img: Img2
     },{
         title:"HOLI CELEBRATION",
-        date: "2-1-23",
         info: "Description",
         img: Img3
     },{
         title:"TREE-PLANTATION DRIVE",
-        date: "2-1-23",
         info: "Description",
         img: Img4
     },{
         title:"RAKSHABANDHAN CELEBRATION",
-        date: "2-1-23",
         info: "Description",
         img: Img5
     },{
         title:"CHRISTMAS CELEBRATION",
-        date: "2-1-23",
         info: "Description",
         img: Img6
     },{
         title:"REPUBLIC DAY CELEBRATION",
-        date: "2-1-23",
         info: "Description",
         img: Img7
     },{
         title:"CLEAN-UP DRIVE",
-        date: "2-1-23",
         info: "Description",
         img: Img8
     },{
         title:"STATIONARY DONATION DRIVE",
-        date: "2-1-23",
         info: "Description",
         img: Img9
     },{
         title:"BLOOD DONATION DRIVE",
-        date: "2-1-23",
         info: "Description",
         img: Img10
     },{
         title:"FLOOD RELIEF DONATION DRIVE",
-        date: "2-1-23",
         info: "Description",
         img: Img11
     },{
         title:"ORPHANAGE VISIT",
-        date: "2-1-23",
         info: "Description",
         img: Img12
     },{
         title:"MARTYR'S DAY",
-        date: "2-1-23",
         info: "Description",
         img: Img13
     },{
         title:"AWARENESS CAMPAIGNS",
-        date: "2-1-23",
         info: "Description",
         img: Img14
     },{
         title:"NSS CAMP",
-        date: "2-1-23",
         info: "Description",
         img: Img15
     },

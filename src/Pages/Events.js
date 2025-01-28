@@ -1,8 +1,11 @@
 import React, {useEffect} from "react";
 import EventsData from "../components/EventsData";
 import "../Styles/Events.css"; // Custom styles for events
+import { useNavigate } from "react-router-dom";
 
 const Events = () => {
+  const navigate = useNavigate();
+
   useEffect(() => {
     window.scrollTo(0, 0); // Scrolls to the top-left corner
   }, []);
@@ -12,7 +15,11 @@ const Events = () => {
         <h1 className="text-center mb-5">Events Conducted By Us</h1>
         <div className="row">
           {EventsData.map((props, ind) => (
-            <div className="col-md-3" key={ind}>
+            <div 
+              className="col-md-3" key={ind} 
+              onClick={() => navigate(`/events/${ind}`)} 
+              style={{ cursor: "pointer" }}
+            >
               <div className="event-card">
                 <img
                   src={props.img}
