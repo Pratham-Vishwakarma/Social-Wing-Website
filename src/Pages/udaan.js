@@ -65,7 +65,7 @@ const Udaan = () => {
         localStorage.setItem("registeredCount", newCount);
         return newCount;
       });
-    }, 1800000); // Update every 30 minutes
+    }, 180000); // Update every 30 minutes
   
     return () => clearInterval(interval);
   }, []);
