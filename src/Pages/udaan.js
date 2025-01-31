@@ -9,7 +9,7 @@ import GIRL from "../Images/Udaan/img1.jpg";
 const Udaan = () => {
   const [registeredCount, setRegisteredCount] = useState(() => {
     const storedValue = localStorage.getItem("registeredCount");
-    const initialValue = storedValue ? Math.min(Number(storedValue), 3000) : 900;  // Ensure we check for valid value
+    const initialValue = storedValue ? Math.min(Number(storedValue), 3000) : 2000;  // Ensure we check for valid value
     return initialValue;
   });
   const [countdown, setCountdown] = useState({
