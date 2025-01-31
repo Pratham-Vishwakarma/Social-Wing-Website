@@ -58,14 +58,14 @@ const Udaan = () => {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      const increment = Math.floor(Math.random() * 11) + 1; // Random between 0 and 10
+      const increment = Math.floor(Math.random() * 200) + 1; // Random between 0 and 10
   
       setRegisteredCount((prevCount) => {
         const newCount = Math.min(prevCount + increment, 3000); // Limit to 3000
         localStorage.setItem("registeredCount", newCount);
         return newCount;
       });
-    }, 180000); // Update every 30 minutes
+    }, 200000); // Update every 30 minutes
   
     return () => clearInterval(interval);
   }, []);
